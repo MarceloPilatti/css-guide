@@ -1,20 +1,19 @@
 const showHideSidebar = () => {
-    let $sidebar = document.querySelector("#sidebar");
-    let $sidebarToggle = document.querySelector("[data-activate='sidebar-toggle']");
+    let $headerBrand = document.querySelector(".header .header-brand");
     let $gridContainer = document.querySelector("#grid-container");
-    $sidebar.classList.toggle("hide");
-    $sidebarToggle.classList.toggle("hide");
-    $gridContainer.classList.toggle("hide");
+    $gridContainer.classList.toggle("hide-sidebar");
+    $headerBrand.classList.toggle("hide");
 }
 
 const setEvents = ()=>{
     /*Sidebar submenu events*/
-    let $sidebarItemParents = document.querySelectorAll("[data-activate='sidebar-submenu']");
-    Array.from($sidebarItemParents).forEach($sidebarItemParent => {
-        $sidebarItemParent.addEventListener("click", event=>{
-            let $subitem = document.querySelector(`[data-parent='#${event.currentTarget.id}']`);
-            $subitem.classList.toggle("hide");
-            $subitem.classList.toggle("show");
+    Array.from(document.querySelectorAll("[data-activate='collapse']")).forEach($toggleBtn => {
+        $toggleBtn.addEventListener("click", event=>{
+            let $collapsible = document.querySelector(`[data-collapse='#${event.currentTarget.id}']`);
+            $collapsible.classList.toggle("show");
+            let $icon = $toggleBtn.querySelector(".fas");
+            $icon.classList.toggle("fa-angle-down");
+            $icon.classList.toggle("fa-angle-up");
         });
     });
     /*Sidebar toggle event*/
@@ -34,7 +33,7 @@ const setEvents = ()=>{
 
 (()=>{
     setEvents();
-    if(isMobile.any){
-        showHideSidebar();
-    }
+    // if(isMobile.any){
+    //     showHideSidebar();
+    // }
 })();
