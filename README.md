@@ -29,8 +29,11 @@ selector {
 ```
 
 * **selector**: Is an element of the HTML markup identified by its name (for example: `<p>`, `<h1>`, `<form>`), by the name of a class applied to the HTML markup element (eg .top, .main, .menu), by the name of an identifier ID applied to the HTML markup element (for example: #total, #navbar, #footer) or any other CSS identifier of elements or HTML markup segments, generically referred to as CSS selectors;
+
 * **property**: Is the property of the HTML element to which the stylization defined in the value (for example: font size, text color, element height) will be applied;
+
 * **value**: Is the specific characteristic to be assumed by the property (for example: arial type letter, blue color, green background, height equal to 300px);
+
 * **property: value**: It is called declaration.
 
 <br>
@@ -44,45 +47,117 @@ Selectors can be divided into the following categories.
 ### &nbsp; &nbsp; **Simple selectors**
 
 * **.class** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_class)*) - The .class selector selects elements with a specific class attribute;
+
 * **#id** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_id)*) - The #id selector styles the element with the specified id;
+
 * **\*** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_all)*) - The * selector selects all elements;
+
 * **element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element)*) - The element selector selects all elements with the specified element name;
-* **element,element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_comma)*) - To style several elements with the same style, separate each element name with a comma.
+
+* **element, element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_comma)*) - To style several elements with the same style, separate each element name with a comma.
 
 ### &nbsp; &nbsp; **Attribute selectors**
 
 * **[attribute]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_attribute)*) - The [attribute] selector is used to select elements with the specified attribute;
+
 * **[attribute=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_attribute_value)*) - The [attribute=value] selector is used to select elements with the specified attribute and value;
+
 * **[attribute~=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_attribute_value_contains)*) - The [attribute~=value] selector is used to select elements with an attribute value containing a specified word;
+
 * **[attribute|=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_attribute_value_lang)*) - The [attribute|=value] selector is used to select elements with the specified attribute starting with the specified value;
+
 * **[attribute^=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_attr_begin)*) - The [attribute^=value] selector matches every element whose attribute value begins with a specified value;
+
 * **[attribute\$=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_attr_end)*) - The [attribute$=value] selector matches every element whose attribute value ends with a specified value;
+
 * **[attribute\*=value]** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_attr_contain)*) - The [attribute*=value] selector matches every element whose attribute value containing a specified value.
 
 ### &nbsp; &nbsp; **Pseudo-Classes** (*[details](https://www.w3schools.com/css/css_pseudo_classes.asp)*)
 
 * **:active** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_active)*) - The :active selector is used to select and style the active link;
+
 * **:focus** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_focus)*) - The :focus selector is used to select the element that has focus;
+
 * **:hover** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover)*) - The :hover selector is used to select elements when you mouse over them;
+
 * **:visited** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_visited)*) - The :visited selector is used to select visited links;
+
 * **:not(selector)** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_not)*) - The :not(selector) selector matches every element that is NOT the specified element/selector;
+
 * **:first-child** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_firstchild)*) - The :first-child selector is used to select the specified selector, only if it is the first child of its parent.
 
 ### &nbsp; &nbsp; **Pseudo-Elements** (*[details](https://www.w3schools.com/css/css_pseudo_elements.asp)*)
 
 * **::after** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after)*) - The ::after selector inserts something after the content of each selected element(s);
+
 * **::before** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_before)*) - The ::before selector inserts something before the content of each selected element(s);
+
 * **::first-letter** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_firstletter)*) - The ::first-letter selector is used to add a style to the first letter of the specified selector;
+
 * **::first-line** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_firstline)*) - The ::first-line selector is used to add a style to the first line of the specified selector;
+
 * **::placeholder** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_placeholder)*) - The ::placeholder selector selects form elements with placeholder text;
+
 * **::selection** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_selection)*) - The ::selection selector matches the portion of an element that is selected by a user.
 
 ### &nbsp; &nbsp; **Combinators** (*[details](https://www.w3schools.com/css/css_combinators.asp)*)
 
 * **element element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_element)*) - The element element selector is used to select elements inside elements;
+
 * **element>element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_gt)*) - The element>element selector is used to select elements with a specific parent;
+
 * **element+element** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_element_pluss)*) - The element+element selector is used to select elements that is placed immediately after (not inside) the first specified element;
+
 * **element1~element2** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gen_sibling)*) - The element1~element2 selector matches occurrences of element2 that are preceded by element1.
+
+
+### **Specificity** (*[details](https://www.w3schools.com/css/css_specificity.asp)*)
+
+Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+
+Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:
+
+* Inline styles - An inline style is attached directly to the element to be styled. Example: `<h1 style="color: #ffffff;">` - 1000 points;
+
+* IDs - An ID is a unique identifier for the page elements, such as `#navbar` - 100 points;
+
+* Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as `:hover`, `:focus`, etc - 10 points;
+
+* Elements and pseudo-elements - This category includes element names and pseudo-elements, such as `h1`, `div`, `:before` and `:after` - 1 point.
+
+A selector's specificity is calculated as follows:
+
+Start at 0, add 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, add 1 for each element name or pseudo-element.
+
+Note: Selectors inside the negation pseudo-class are counted like any other, but the negation itself does not count as a pseudo-class.
+
+Example:
+
+A:
+```
+h1 {
+    color: red;
+}
+```
+B: 
+
+```
+#content h1 {
+    color: blue;
+}
+```
+C:
+```
+<div id="content">
+    <h1 style="color: #ffffff">
+        Heading
+    </h1>
+</div>
+```
+
+* The specificity of A is 1 (one element);
+* The specificity of B is 101 (one ID reference and one element);
+* The specificity of C is 1000 (inline styling).
 
 <br>
 
@@ -91,7 +166,9 @@ Selectors can be divided into the following categories.
 CSS functions are used as a value for various CSS properties.
 
 * **calc()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_calc)*) - The calc() function performs a calculation to be used as the property value;
+
 * **rgb()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_rgb)*) - The rgb() function define colors using the Red-green-blue (RGB) model;
+
 * **var()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_var)*) - The var() function is used to insert the value of a custom property instead of any part of a value of another property.
 
 <br>
@@ -140,45 +217,74 @@ There are two types of length units: absolute and relative.
 &nbsp; &nbsp; The display property specifies the display behavior (the type of rendering box) of an element.
 
 * **inline** - Displays an element as an inline element (like `<span>`). Any height and width properties will have no effect (default);
+
 * **block** - Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width;
+
 * **inline-block** - Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values;
+
 * **none** - The element is completely removed.
 
 ### &nbsp; &nbsp; **Positioning** (*[details](https://www.w3schools.com/css/css_positioning.asp)*)
 
 * **top** - Sets the top margin edge for a positioned box;
+
 * **right** - Sets the right margin edge for a positioned box;
+
 * **bottom** - Sets the bottom margin edge for a positioned box;
+
 * **left** - Sets the left margin edge for a positioned box;
 
 #### &nbsp; &nbsp; **Position property**
 
 &nbsp; &nbsp; The position property specifies the type of positioning method used for an element.
 
-* **static** - An element with `position: static;` is always positioned according to the normal flow of the page. It is not affected by the top, bottom, left, and right properties (HTML elements are positioned static by default).
-* **relative** - An element with `position: relative;` is positioned relative to its normal position (It is affected by top, right, bottom, and left properties). Other content will not be adjusted to fit into any gap left by the element;
-* **fixed** - An element with `position: fixed;` is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element;
-* **absolute** - An element with `position: absolute;` is positioned relative to the nearest positioned ancestor (except `static` element);
-* **sticky** - An element with `position: sticky;` is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed);
-* **z-index** - The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+* **static** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_static)*) - An element with `position: static;` is always positioned according to the normal flow of the page. It is not affected by the top, bottom, left, and right properties (HTML elements are positioned static by default).
+
+* **relative** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative)*) - An element with `position: relative;` is positioned relative to its normal position (It is affected by top, right, bottom, and left properties). Other content will not be adjusted to fit into any gap left by the element;
+* **fixed** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed)*) - An element with `position: fixed;` is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element;
+
+* **absolute** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute)*) - An element with `position: absolute;` is positioned relative to the nearest positioned ancestor (except `static` element);
+
+* **sticky** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky)*) - An element with `position: sticky;` is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed);
+
+* **z-index** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex)*) - The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
 
 #### &nbsp; &nbsp; **Float** (*[details](https://www.w3schools.com/css/css_float.asp)*)
 
 &nbsp; &nbsp; The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
 
-* **left** - The element floats to the left of its container;
-* **right** - The element floats to the right of its container;
-* **none** - The element does not float (will be displayed just where it occurs in the text). This is default;
-* **clear** - The clear property specifies what elements can float beside the cleared element and on which side.
+* **none** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float_none)*) - The element does not float (will be displayed just where it occurs in the text). This is default;
+
+* **left** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float2)*) - The element floats to the left of its container;
+
+* **right** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float)*) - The element floats to the right of its container;
+
+* **clear** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clear)*) - The clear property specifies what elements can float beside the cleared element and on which side.
 
 ### &nbsp; &nbsp; **Overflow** (*[details](https://www.w3schools.com/css/css_overflow.asp)*)
 
 &nbsp; &nbsp; The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
 
-* visible - The overflow is not clipped. The content renders outside the element's box (default);
-* hidden - The overflow is clipped, and the rest of the content will be invisible;
-* scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content;
-* auto - Similar to scroll, but it adds scrollbars only when necessary.
+* **visible** - The overflow is not clipped. The content renders outside the element's box (default);
+
+* **hidden** - The overflow is clipped, and the rest of the content will be invisible;
+
+* **scroll** - The overflow is clipped, and a scrollbar is added to see the rest of the content;
+
+* **auto** - Similar to scroll, but it adds scrollbars only when necessary.
+
+
+### &nbsp; &nbsp; **Transitions** (*[details](https://www.w3schools.com/css/css3_transitions.asp)*)
+
+&nbsp; &nbsp; CSS transitions allows you to change property values smoothly (from one value to another), over a given duration.
+
+* **transition-delay** - Specifies a delay (in seconds) for the transition effect;
+
+* **transition-duration** - Specifies how many seconds or milliseconds a transition effect takes to complete;
+
+* **transition-property** - Specifies the name of the CSS property the transition effect is for;
+
+* **transition-timing-function** - Specifies the speed curve of the transition effect.
 
 <br>
 
@@ -194,17 +300,18 @@ To use the viewport you should include the following `<meta>` viewport element o
 <meta name="viewport" content="width=device-width initial-scale=1.0">
 ```
 
-* A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling;
+* A `<meta>` viewport element gives the browser instructions on how to control the page's dimensions and scaling;
 
-* The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device);
+* The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device);
 
-* The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+* The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
 
-**Flexbox** (*[details](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)*)
 
-**Grid** (*[details](https://css-tricks.com/snippets/css/complete-guide-grid/)*)
+&nbsp; &nbsp; **Flexbox** (*[details](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)*)
 
-**Media Queries** (*[details](https://www.w3schools.com/css/css3_mediaqueries.asp)*)
+&nbsp; &nbsp; **Grid** (*[details](https://css-tricks.com/snippets/css/complete-guide-grid/)*)
+
+&nbsp; &nbsp; **Media Queries** (*[details](https://www.w3schools.com/css/css3_mediaqueries.asp)*)
 
 <br>
 
@@ -223,6 +330,7 @@ Here are a few of the most popular CSS preprocessors:
 
 ## **9. Usefull links**
 
-* https://www.maujor.com/;
+* https://www.maujor.com;
 * https://www.w3schools.com/css/default.asp;
-* https://css-tricks.com/.
+* https://css-tricks.com;
+* https://caniuse.com.
