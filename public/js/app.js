@@ -1,12 +1,5 @@
-const showHideSidebar = () => {
-    let $headerBrand = document.querySelector(".header .header-brand");
-    let $gridContainer = document.querySelector("#grid-container");
-    $gridContainer.classList.toggle("hide-sidebar");
-    $headerBrand.classList.toggle("hide");
-}
-
 const setEvents = ()=>{
-    /*Sidebar submenu events*/
+    /* Collapse events */
     Array.from(document.querySelectorAll("[data-activate='collapse']")).forEach($toggleBtn => {
         $toggleBtn.addEventListener("click", event=>{
             let $collapsible = document.querySelector(`[data-collapse='#${event.currentTarget.id}']`);
@@ -16,10 +9,15 @@ const setEvents = ()=>{
             $icon.classList.toggle("fa-angle-up");
         });
     });
-    /*Sidebar toggle event*/
+    
+    /* Sidebar toggle event */
     document.querySelector("[data-activate='sidebar-toggle']").addEventListener("click", ()=>{
-        showHideSidebar();
+        let $headerBrand = document.querySelector(".header .header-brand");
+        let $gridContainer = document.querySelector("#grid-container");
+        $gridContainer.classList.toggle("hide-sidebar");
+        $headerBrand.classList.toggle("hide");
     });
+
     /* Flag click event */
     Array.from(document.querySelectorAll("[data-parent='#language'] > .sidebar-subitem"))
     .forEach($selectedSubitem => {
@@ -33,7 +31,4 @@ const setEvents = ()=>{
 
 (()=>{
     setEvents();
-    // if(isMobile.any){
-    //     showHideSidebar();
-    // }
 })();
