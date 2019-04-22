@@ -5,12 +5,14 @@ This is a guide to learn the basics of CSS and is separated by the following str
 1. What's CSS?
 2. Syntax
 3. Selectors
-4. Functions
-5. Units
-6. Some properties
-7. Responsiveness
-8. Preprocessors
-9. Usefull links
+4. Properties
+5. Inheritance
+6. Functions
+7. Units
+8. Some properties
+9. Responsiveness
+10. Preprocessors
+11. Usefull links
 
 ## **1. What's CSS?**
 
@@ -161,7 +163,21 @@ C:
 
 <br>
 
-## **4. Functions** (*[details](https://www.w3schools.com/cssref/css_functions.asp)*)
+## **4. Properties** (*[details](https://www.w3schools.com/cssref/css_functions.asp)*)
+
+
+<br>
+
+## **5. Inheritance** (*[details](https://www.w3schools.com/cssref/css_functions.asp)*)
+
+CSS inheritance is the last piece we need to investigate to get all the information and understand what style is applied to an element. The idea is that some property values applied to an element will be inherited by that element's children, and some won't.
+
+For example, it makes sense for font-family and color to be inherited, as that makes it easy for you to set a site-wide base font by applying a font-family to the `<html>` element; you can then override the fonts on individual elements where needed. It would be really annoying to have to set the base font separately on every element.
+As another example, it makes sense for margin, padding, border, and background-image to NOT be inherited. Imagine the styling/layout mess that would occur if you set these properties on a container element and had them inherited by every single child element, and then had to unset them all on each individual element!
+
+<br>
+
+## **6. Functions** (*[details](https://www.w3schools.com/cssref/css_functions.asp)*)
 
 CSS functions are used as a value for various CSS properties.
 
@@ -173,7 +189,7 @@ CSS functions are used as a value for various CSS properties.
 
 <br>
 
-## **5. Units** (*[details](https://www.w3schools.com/css/css_units.asp)*)
+## **7. Units** (*[details](https://www.w3schools.com/css/css_units.asp)*)
 
 CSS offers a number of different units for expressing length. Some have their history in typography, such as point (pt) and pica (pc), others are known from everyday use, such as centimeter (cm) and inch (in). And there is also a "magic" unit that was invented specifically for CSS: the px.
 
@@ -206,7 +222,7 @@ There are two types of length units: absolute and relative.
 
 <br>
 
-## **6. Some properties**
+## **8. Some properties**
 
 ### &nbsp; &nbsp; **Box sizing** (*[details](https://www.w3schools.com/css/css3_box-sizing.asp)*)
 
@@ -288,7 +304,7 @@ There are two types of length units: absolute and relative.
 
 <br>
 
-## **7. Responsiveness**
+## **9. Responsiveness**
 
 &nbsp; &nbsp; **Viewport**
 
@@ -315,7 +331,7 @@ To use the viewport you should include the following `<meta>` viewport element o
 
 <br>
 
-## **8. Preprocessors**
+## **10. Preprocessors**
 
 A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
 
@@ -328,9 +344,10 @@ Here are a few of the most popular CSS preprocessors:
 
 <br>
 
-## **9. Usefull links**
+## **11. Usefull links**
 
 * https://www.maujor.com;
 * https://www.w3schools.com/css/default.asp;
 * https://css-tricks.com;
+* https://developer.mozilla.org/en-US/docs/Learn/CSS;
 * https://caniuse.com.
