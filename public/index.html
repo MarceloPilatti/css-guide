@@ -1,34 +1,33 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/all.min.css">
-        <link rel="stylesheet" href="/css/styles.css">
+        <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+        <link rel="stylesheet" href="/css/app.min.css">
+        <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     </head>
     <body>
         <div id="grid-container" class="grid-container hide-sidebar">
             <nav class="header">
-                <div class="sidebar-toggle" data-activate="sidebar-toggle">
+                <div class="header-item" data-activate="sidebar-toggle">
                     <a class="fas fa-bars"></a>
                 </div>
                 <a class="header-brand" href="/">
-                    <img src="/img/terrama2_logo.png" class="img-logo" /> 
+                    <img src="/img/terrama2_logo.png" /> 
                     TerraMA²
                 </a>
                 <div class="collapse" data-collapse="#header-toggle">
-                    <ul class="navbar">
+                    <ul class="header-navbar">
                         <li class="header-item active"><a href="#">Item 1</a></li>
                         <li class="header-item"><a href="#">Item 2</a></li>
                         <li class="header-item"><a href="#">Item 3</a></li>
                         <li class="header-item"><a href="#">Item 4</a></li>
                     </ul>
-
-                    <div class="dropdown">
+                    <div>
                         <a id="user-dropdown" href="#" class="header-item" data-activate="collapse">
                             Marcelo&nbsp;&nbsp;
                             <span class="fas fa-angle-down"></span>
                         </a>
-                        <div class="dropdown-menu collapse" data-collapse="#user-dropdown">
+                        <div class="dropdown collapse" data-collapse="#user-dropdown">
                             <a class="dropdown-item" href="#">Settings</a>
                         </div>
                     </div>
@@ -48,77 +47,72 @@
             </nav>
             <aside id="sidebar" class="sidebar">
                 <div class="sidebar-header">
-                    <a href="/">
-                        <img src="/img/terrama2_logo.png" class="img-logo">
-                    </a>
-                    <div class="sidebar-title">
-                        <a href="/">TerraMA²</a>
-                        <span class="small-text"></span>
-                    </div>
+                    <a class="sidebar-header-logo" href="/"><img src="/img/terrama2_logo.png"></a>
+                    <a class="sidebar-header-title" href="/">TerraMA²</a>
                 </div>
                 <hr>
                 <div class="sidebar-body">
                     <ul>
                         <li id="projects" class="sidebar-item" data-activate="collapse">
                             <a href="#">Projects</a>
-                            <span class="fas fa-angle-down"></span>
+                            <a class="fas fa-angle-down"></a>
                         </li>
                         <ul class="collapse" data-collapse="#projects">
-                            <li class="sidebar-subitem small"><a href="#">Project 1</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Project 2</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Project 3</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Project 4</a></li>
+                            <li class="sidebar-item"><a href="#">Project 1</a></li>
+                            <li class="sidebar-item"><a href="#">Project 2</a></li>
+                            <li class="sidebar-item"><a href="#">Project 3</a></li>
+                            <li class="sidebar-item"><a href="#">Project 4</a></li>
                         </ul>
                         <li id="views" class="sidebar-item" data-activate="collapse">
                             <a href="#">Views</a>
-                            <span class="fas fa-angle-down"></span>
+                            <a class="fas fa-angle-down"></a>
                         </li>
                         <ul class="collapse" data-collapse="#views">
-                            <li class="sidebar-subitem small"><a href="#">View 1<a href="#"><span class="fas fa-cog"></span></a></li>
-                            <li class="sidebar-subitem small"><a href="#">View 2</a></li>
-                            <li class="sidebar-subitem small"><a href="#">View 3</a></li>
-                            <li class="sidebar-subitem small"><a href="#">View 4</a></li>
+                            <li class="sidebar-item"><a href="#">View 1<a href="#"><span class="fas fa-cog"></span></a></li>
+                            <li class="sidebar-item"><a href="#">View 2</a></li>
+                            <li class="sidebar-item"><a href="#">View 3</a></li>
+                            <li class="sidebar-item"><a href="#">View 4</a></li>
                         </ul>
-                        <li id="staticData" class="sidebar-item" data-activate="collapse"><a href="#">Static Data</a><span class="fas fa-angle-down"></span></li>
+                        <li id="staticData" class="sidebar-item" data-activate="collapse"><a href="#">Static Data</a><a class="fas fa-angle-down"></a></li>
                         <ul class="collapse" data-collapse="#staticData">
-                            <li class="sidebar-subitem small"><a href="#">Data 1</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 2</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 3</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 4</a></li>
+                            <li class="sidebar-item"><a href="#">Data 1</a></li>
+                            <li class="sidebar-item"><a href="#">Data 2</a></li>
+                            <li class="sidebar-item"><a href="#">Data 3</a></li>
+                            <li class="sidebar-item"><a href="#">Data 4</a></li>
                         </ul>
-                        <li id="dynamicData" class="sidebar-item" data-activate="collapse"><a href="#">Dynamic Data</a><span class="fas fa-angle-down"></span></li>
+                        <li id="dynamicData" class="sidebar-item" data-activate="collapse"><a href="#">Dynamic Data</a><a class="fas fa-angle-down"></a></li>
                         <ul class="collapse" data-collapse="#dynamicData">
-                            <li class="sidebar-subitem small"><a href="#">Data 1</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 2</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 3</a></li>
-                            <li class="sidebar-subitem small"><a href="#">Data 4</a></li>
+                            <li class="sidebar-item"><a href="#">Data 1</a></li>
+                            <li class="sidebar-item"><a href="#">Data 2</a></li>
+                            <li class="sidebar-item"><a href="#">Data 3</a></li>
+                            <li class="sidebar-item"><a href="#">Data 4</a></li>
                         </ul>
                     </ul>
                 </div>
                 <ul>
                     <ul class="collapse" data-collapse="#language">
-                        <li class="sidebar-subitem small">
+                        <li class="sidebar-item">
                             <img src="/img/BR.png" />
                             <a href="#">Portuguese</a>    
                         </li>
-                        <li class="sidebar-subitem small">
+                        <li class="sidebar-item">
                             <img src="/img/ES.png" />
                             <a href="#">Spanish</a>
                         </li>
-                        <li class="sidebar-subitem small">
+                        <li class="sidebar-item">
                             <img src="/img/US.png" />
                             <a href="#">English</a>
                         </li>
                     </ul>
-                    <li id="language" class="sidebar-item small" data-activate="collapse">
+                    <li id="language" class="sidebar-item" data-activate="collapse">
                         <img src="/img/US.png" />
-                        <a href="#">English</a>
+                        <a class="small-text" href="#">English</a>
                     </li>
-                    <li class="sidebar-item small">
-                        <a href="#"><span class="fas fa-info"></span>&nbsp;&nbsp;About</a>
+                    <li class="sidebar-item">
+                        <a class="small-text" href="#"><span class="fas fa-info"></span>&nbsp;&nbsp;About</a>
                     </li>
                 </ul>
-                <!-- <div class="sidebar-footer sidebar-footer-silver">
+                <!-- <div class="sidebar-footer">
                     <a href=""><img id="inpe-image" src="/img/inpe.png"></a>
                     <a href=""><img id="programa-queimadas-image" src="/img/programa_queimadas.png"></a>
                     <a href=""><img id="defra-image" src="/img/defra.png"></a>
@@ -127,22 +121,10 @@
             </aside>
             <main class="content"></main>
             <aside class="sidebar-right">
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                    <li><a href="#">Link 6</a></li>
-                    <li><a href="#">Link 7</a></li>
-                    <li><a href="#">Link 8</a></li>
-                    <li><a href="#">Link 9</a></li>
-                    <li><a href="#">Link 10</a></li>
-                </ul>
             </aside>
             <footer class="footer"></footer>
         </div>
-        <script src="/js/all.min.js"></script>
-        <script src="/js/app.js"></script>
+        <!-- <script src="/js/all.min.js"></script> -->
+        <script src="/js/app.min.js"></script>
     </body>
 </html> 
