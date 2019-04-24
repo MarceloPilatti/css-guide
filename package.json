@@ -12,10 +12,9 @@
     "@node-minify/clean-css": "^4.0.5",
     "@node-minify/cli": "^4.1.0",
     "@node-minify/uglify-es": "^4.0.5",
-    "sass": "^1.19.0"
-  },
-  "dependencies": {
+    "sass": "^1.19.0",
     "autoprefixer": "^9.5.1",
     "postcss-cli": "^6.1.2"
-  }
+  },
+  "dependencies": {}
 }

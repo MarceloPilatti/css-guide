@@ -6,7 +6,6 @@
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   --black-color: #000;
-  --white-color: #fff;
   --text-shadow: 1px 1px #000
 }
 
@@ -201,10 +200,10 @@
 
 .content {
   grid-area: content;
-  @extend %flex-row-center;
-  background-color: var(--light-color);
-  font-size: 50px;
-  font-weight: bold
+  // @extend %flex-row-center;
+  // background-color: var(--light-color);
+  // font-size: 50px;
+  // font-weight: bold
 }
 
 .footer {
@@ -264,7 +263,7 @@
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  &:active{
+  &:active {
     border: 1px solid transparent;
   }
   &-light {

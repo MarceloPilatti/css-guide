@@ -434,9 +434,25 @@ Here are a few of the most popular CSS preprocessors:
 
 ### **11.2 Postprocessors**
 
-* https://postcss.org/
-* http://pleeease.io/
+In theory, a post-processor is a tool whose input is a CSS file and whose output is a transformed CSS file. Note that, differently from preprocessors, a post-processor doesn’t involve another language, it’s just plain CSS.
 
+Here are some good examples of post-processing plugins:
+
+* **Autoprefixer**: Automatically includes vendor-prefixes according to the browsers you want to support;
+
+* **PostCSS Assets**: Handles asset paths, cache-busting, image dimensions and base64 image inlining;
+
+* **cssnano**: Minifies your CSS;
+
+* **Font Magician**: Automatically generates @font-faces;
+
+* **postcss-color-palette**: Allows you to use native CSS color names like blue, purple, aqua, yellow and others as aliases for colors from your own palette, replacing each reference with the color you specify;
+
+* **stylint**: Analyzes your code, suggests fixes and improvements and (if you want to), applies some of them;
+
+* **postcss-sprites**: Extracts images from your stylesheets, generates a sprite containing all of them and replaces the original references to make use of the created sprite.
+
+https://postcss.org/
 
 [Back to top](#css-guide)
 
