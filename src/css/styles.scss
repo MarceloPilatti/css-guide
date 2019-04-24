@@ -384,3 +384,26 @@
     width: 150px
   }
 }
+
+.container {
+  display: flex;
+  
+}
+
+.column {
+  border: 1px solid #ccc;
+  padding: 15px
+}
+
+.column-1 {
+  flex-basis: 20%;
+}
+
+.column-2 {
+  flex-basis: 20%;
+  
+}
+
+.column-3 {
+  flex-basis: 20%
+}
