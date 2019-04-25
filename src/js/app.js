@@ -16,14 +16,14 @@ const setEvents = ()=>{
 
     /* Sidebar toggle event */
     document.querySelector("[data-activate='sidebar-toggle']").addEventListener("click", ()=>{
-        let $headerBrand = document.querySelector(".header .header-brand");
+        let $headerBrand = document.querySelector(".header-brand");
         let $gridContainer = document.querySelector("#grid-container");
         $gridContainer.classList.toggle("hide-sidebar");
         $headerBrand.classList.toggle("hide");
     });
 
     /* Language click event */
-    Array.from(document.querySelectorAll("[data-collapse='#language'] > .sidebar-subitem"))
+    Array.from(document.querySelectorAll("[data-collapse='#language'] .sidebar-item"))
     .forEach($selectedSubitem => {
         $selectedSubitem.addEventListener("click", ()=>{
             let $itemParent = document.querySelector("#language");

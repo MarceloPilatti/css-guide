@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "sass": "sass --watch --trace --no-quiet --stop-on-error -c src/css/styles.scss src/css/styles.css &",
+    "sass-prod": "sass --watch --trace --no-quiet --stop-on-error -c src/css/styles.scss src/css/styles.css &",
     "prefix": "npx postcss --verbose src/css/*.css -u autoprefixer -r --no-map -m",
     "minify-css": "npx postcss -w --verbose src/css/styles.css -u cssnano --no-map -m -o public/css/styles.min.css &",
     "minify-js": "node-minify -c uglify-es --input 'src/js/app.js' -o 'public/js/app.min.js'",
     "prepare": "npm run sass;npm run prefix;npm run minify-js;npm run minify-css",
-    "start": "npm run prepare;http-server -c-1"
+    "start-prod": "npm run prepare;http-server -c-1",
+    
+    "sass": "sass --watch --trace --no-quiet --stop-on-error -c public/css/styles.scss public/css/styles.css &",
+    "start": "npm run sass;http-server -c-1"
   },
   "devDependencies": {
     "@node-minify/cli": "^4.1.0",
