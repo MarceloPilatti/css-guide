@@ -1,4 +1,4 @@
-const collapse = $toggleBtn=>{
+const collapse = $toggleBtn => {
     let $collapsible = document.querySelector(`[data-collapse='#${$toggleBtn.id}']`);
     $collapsible.classList.toggle("show");
     let $icon = $toggleBtn.querySelector(".fas");
@@ -7,7 +7,7 @@ const collapse = $toggleBtn=>{
         $icon.classList.toggle("fa-angle-up");
     }
 }
-const setEvents = ()=>{
+const setEvents = () => {
     /* Collapse events */
     Array.from(document.querySelectorAll("[data-activate='collapse']")).forEach($toggleBtn => {
         $toggleBtn.addEventListener("click", () => collapse($toggleBtn));
@@ -15,17 +15,23 @@ const setEvents = ()=>{
     });
 
     /* Sidebar toggle event */
-    document.querySelector("[data-activate='sidebar-toggle']").addEventListener("click", ()=>{
-        let $headerBrand = document.querySelector(".header-brand");
+    document.querySelector("[data-activate='sidebar-toggle']").addEventListener("click", () => {
         let $gridContainer = document.querySelector("#grid-container");
-        $gridContainer.classList.toggle("hide-sidebar");
-        $headerBrand.classList.toggle("hide");
+        let $headerBrand = document.querySelector(".header-brand");
+        let isSidebarHidden = $gridContainer.classList.contains("hide-sidebar");
+        if(isSidebarHidden) {
+            $gridContainer.classList.remove("hide-sidebar");
+            $headerBrand.classList.add("hide");
+            return;
+        }
+        $gridContainer.classList.add("hide-sidebar");
+        $headerBrand.classList.remove("hide");
     });
 
     /* Language click event */
     Array.from(document.querySelectorAll("[data-collapse='#language'] .sidebar-item"))
     .forEach($selectedSubitem => {
-        $selectedSubitem.addEventListener("click", ()=>{
+        $selectedSubitem.addEventListener("click", () => {
             let $itemParent = document.querySelector("#language");
             $itemParent.querySelector("img").src = $selectedSubitem.querySelector("img").src;
             $itemParent.querySelector("a").textContent = $selectedSubitem.querySelector("a").textContent;

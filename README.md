@@ -160,13 +160,13 @@ Specificity is the means by which browsers decide which CSS property values are 
 
 Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:
 
-* Inline styles - An inline style is attached directly to the element to be styled. Example: `<h1 style="color: #ffffff;">` - 1000 points;
+- Inline styles - An inline style is attached directly to the element to be styled. Example: `<h1 style="color: #ffffff;">` - 1000 points;
 
-* IDs - An ID is a unique identifier for the page elements, such as `#navbar` - 100 points;
+- IDs - An ID is a unique identifier for the page elements, such as `#navbar` - 100 points;
 
-* Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as `:hover`, `:focus`, etc - 10 points;
+- Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as `:hover`, `:focus`, etc - 10 points;
 
-* Elements and pseudo-elements - This category includes element names and pseudo-elements, such as `h1`, `div`, `:before` and `:after` - 1 point.
+- Elements and pseudo-elements - This category includes element names and pseudo-elements, such as `h1`, `div`, `:before` and `:after` - 1 point.
 
 A selector's specificity is calculated as follows:
 
@@ -198,9 +198,9 @@ C:
 </div>
 ```
 
-* The specificity of A is 1 (one element);
-* The specificity of B is 101 (one ID reference and one element);
-* The specificity of C is 1000 (inline styling).
+- The specificity of A is 1 (one element);
+- The specificity of B is 101 (one ID reference and one element);
+- The specificity of C is 1000 (inline styling).
 
 [Back to top](#css-guide)
 
@@ -214,43 +214,43 @@ As another example, it makes sense for margin, padding, border, and background-i
 
 List of some inherited properties:
 
-* **:active**;
-* **background**;
-* **border-collapse**;
-* **border-spacing**;
-* **border-width**;
-* **caption-side**;
-* **color**;
-* **cursor**;
-* **font**;
-* **font-family**;
-* **font-size**;
-* **font-size-adjust**;
-* **font-stretch**;
-* **font-style**;
-* **font-variant**;
-* **font-weight**;
-* **font**;
-* **:focus**;
-* **:first-child**;
-* **::first-letter**;
-* **::first-line**;
-* **:hover**;
-* **letter-spacing**;
-* **line-height**;
-* **list-style-image**;
-* **list-style-position**;
-* **list-style-type**;
-* **list-style**;
-* **opacity**;
-* **text-align**;
-* **text-indent**;
-* **text-transform**;
-* **text-size-adjust**;
-* **visibility**;
-* **:visited**;
-* **white-space**;
-* **word-spacing**.
+- **:active**;
+- **background**;
+- **border-collapse**;
+- **border-spacing**;
+- **border-width**;
+- **caption-side**;
+- **color**;
+- **cursor**;
+- **font**;
+- **font-family**;
+- **font-size**;
+- **font-size-adjust**;
+- **font-stretch**;
+- **font-style**;
+- **font-variant**;
+- **font-weight**;
+- **font**;
+- **:focus**;
+- **:first-child**;
+- **::first-letter**;
+- **::first-line**;
+- **:hover**;
+- **letter-spacing**;
+- **line-height**;
+- **list-style-image**;
+- **list-style-position**;
+- **list-style-type**;
+- **list-style**;
+- **opacity**;
+- **text-align**;
+- **text-indent**;
+- **text-transform**;
+- **text-size-adjust**;
+- **visibility**;
+- **:visited**;
+- **white-space**;
+- **word-spacing**.
 
 [Back to top](#css-guide)
 
@@ -406,11 +406,11 @@ To use the viewport you should include the following `<meta>` viewport element o
 <meta name="viewport" content="width=device-width initial-scale=1.0">
 ```
 
-* A `<meta>` viewport element gives the browser instructions on how to control the page's dimensions and scaling;
+- A `<meta>` viewport element gives the browser instructions on how to control the page's dimensions and scaling;
 
-* The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device);
+- The `width=device-width` part sets the width of the page to follow the screen-width of the device (which will vary depending on the device);
 
-* The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
+- The `initial-scale=1.0` part sets the initial zoom level when the page is first loaded by the browser.
 
 ### **10.2 Media Queries** (*[details](https://www.w3schools.com/css/css3_mediaqueries.asp)*)
 
@@ -428,9 +428,9 @@ A CSS preprocessor is a program that lets you generate CSS from the preprocessor
 
 Here are a few of the most popular CSS preprocessors:
 
-* https://sass-lang.com/
-* http://lesscss.org/
-* http://stylus-lang.com/
+- https://sass-lang.com/
+- http://lesscss.org/
+- http://stylus-lang.com/
 
 ### **11.2 Postprocessors**
 
@@ -438,19 +438,19 @@ In theory, a post-processor is a tool whose input is a CSS file and whose output
 
 Here are some good examples of post-processing plugins:
 
-* **Autoprefixer**: Automatically includes vendor-prefixes according to the browsers you want to support;
+- **Autoprefixer**: Automatically includes vendor-prefixes according to the browsers you want to support;
 
-* **PostCSS Assets**: Handles asset paths, cache-busting, image dimensions and base64 image inlining;
+- **PostCSS Assets**: Handles asset paths, cache-busting, image dimensions and base64 image inlining;
 
-* **cssnano**: Minifies your CSS;
+- **cssnano**: Minifies your CSS;
 
-* **Font Magician**: Automatically generates @font-faces;
+- **Font Magician**: Automatically generates @font-faces;
 
-* **postcss-color-palette**: Allows you to use native CSS color names like blue, purple, aqua, yellow and others as aliases for colors from your own palette, replacing each reference with the color you specify;
+- **postcss-color-palette**: Allows you to use native CSS color names like blue, purple, aqua, yellow and others as aliases for colors from your own palette, replacing each reference with the color you specify;
 
-* **stylint**: Analyzes your code, suggests fixes and improvements and (if you want to), applies some of them;
+- **stylint**: Analyzes your code, suggests fixes and improvements and (if you want to), applies some of them;
 
-* **postcss-sprites**: Extracts images from your stylesheets, generates a sprite containing all of them and replaces the original references to make use of the created sprite.
+- **postcss-sprites**: Extracts images from your stylesheets, generates a sprite containing all of them and replaces the original references to make use of the created sprite.
 
 https://postcss.org/
 
@@ -458,10 +458,10 @@ https://postcss.org/
 
 ## **12. Usefull links**
 
-* https://www.maujor.com.
-* https://www.w3schools.com/css/default.asp.
-* https://css-tricks.com.
-* https://developer.mozilla.org/en-US/docs/Learn/CSS.
-* https://caniuse.com.
+- https://www.maujor.com.
+- https://www.w3schools.com/css/default.asp.
+- https://css-tricks.com.
+- https://developer.mozilla.org/en-US/docs/Learn/CSS.
+- https://caniuse.com.
 
 [Back to top](#css-guide)

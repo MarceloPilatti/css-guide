@@ -1,17 +1,17 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/all.min.css">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
-        <div id="grid-container" class="grid-container hide-sidebar">
+        <div id="grid-container" class="grid-container">
             <nav class="header">
                 <div class="header-item" data-activate="sidebar-toggle">
                     <a class="fas fa-bars"></a>
                 </div>
-                <a class="header-brand" href="/">
+                <a class="header-brand hide" href="/">
                     <img src="/img/terrama2_logo.png" /> 
                     TerraMA²
                 </a>
@@ -22,12 +22,26 @@
                         <li class="header-item"><a href="#">Item 3</a></li>
                         <li class="header-item"><a href="#">Item 4</a></li>
                     </ul>
-                    <div>
+
+                    <div class="dropdown">
                         <a id="user-dropdown" href="#" class="header-item" data-activate="collapse">
+                            <img src="/img/US.png" />
+                            &nbsp;&nbsp;
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="collapse" data-collapse="#user-dropdown">
+                            <a class="dropdown-item" href="#"><img src="/img/US.png" /></a>
+                            <a class="dropdown-item" href="#"><img src="/img/ES.png" /></a>
+                            <a class="dropdown-item" href="#"><img src="/img/BR.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a id="lang-dropdown" href="#" class="header-item" data-activate="collapse">
                             User&nbsp;&nbsp;
                             <span class="fas fa-angle-down"></span>
                         </a>
-                        <div class="dropdown collapse" data-collapse="#user-dropdown">
+                        <div class="collapse" data-collapse="#lang-dropdown">
                             <a class="dropdown-item" href="#">Settings</a>
                         </div>
                     </div>
@@ -38,6 +52,7 @@
                 </div>
             </nav>
             <aside id="sidebar" class="sidebar">
+                <!-- <a class="sidebar-toggle fas fa-bars" data-activate="sidebar-toggle"></a> -->
                 <div class="sidebar-header">
                     <a class="sidebar-header-logo" href="/"><img src="/img/terrama2_logo.png"></a>
                     <a class="sidebar-header-title" href="/">TerraMA²</a>
@@ -60,24 +75,132 @@
                             <a class="fas fa-angle-down"></a>
                         </li>
                         <ul class="collapse" data-collapse="#views">
-                            <li class="sidebar-item"><a href="#">View 1<a href="#"><span class="fas fa-cog"></span></a></li>
-                            <li class="sidebar-item"><a href="#">View 2</a></li>
-                            <li class="sidebar-item"><a href="#">View 3</a></li>
-                            <li class="sidebar-item"><a href="#">View 4</a></li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    View 1
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    View 2
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    View 3
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    View 4
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    View 5
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                         <li id="staticData" class="sidebar-item" data-activate="collapse"><a href="#">Static Data</a><a class="fas fa-angle-down"></a></li>
                         <ul class="collapse" data-collapse="#staticData">
-                            <li class="sidebar-item"><a href="#">Data 1</a></li>
-                            <li class="sidebar-item"><a href="#">Data 2</a></li>
-                            <li class="sidebar-item"><a href="#">Data 3</a></li>
-                            <li class="sidebar-item"><a href="#">Data 4</a></li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 1
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 2
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 3
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 4
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 5
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                         <li id="dynamicData" class="sidebar-item" data-activate="collapse"><a href="#">Dynamic Data</a><a class="fas fa-angle-down"></a></li>
                         <ul class="collapse" data-collapse="#dynamicData">
-                            <li class="sidebar-item"><a href="#">Data 1</a></li>
-                            <li class="sidebar-item"><a href="#">Data 2</a></li>
-                            <li class="sidebar-item"><a href="#">Data 3</a></li>
-                            <li class="sidebar-item"><a href="#">Data 4</a></li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 1
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 2
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 3
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 4
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#">
+                                    Data 5
+                                    <div class="sidebar-icon-container">
+                                        <a class="fas fa-cog" href="#"></a>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </ul>
                     <ul>
@@ -112,7 +235,7 @@
                     <a href=""><img id="world-bank-image" src="/img/banco_mundial.png"></a>
                 </div>
             </aside>
-            <!-- <main class="content"></main> -->
+            <main class="content"></main>
             <aside class="sidebar-right"></aside>
             <footer class="footer"></footer>
         </div>
