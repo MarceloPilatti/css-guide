@@ -625,6 +625,109 @@
   }
 }
 
+.card {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  & hr {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+  &.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    & hr {
+      border-bottom-color: #b1dfbb;
+    }
+  }
+  &.danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    & hr {
+      border-bottom-color: #f5c6cb;
+    }
+  }
+  &.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    & hr {
+      border-bottom-color: #ffeeba;
+    }
+  }
+  &.info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    & hr {
+      border-bottom-color: #bee5eb;
+    }
+  }
+  &-header {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    & h3, & h4 {
+      margin-top: 0;
+    }
+  }
+  &-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-bottom: 1px solid #dee2e6;
+  & .tab {
+    margin-bottom: -1px;
+    & .nav-item {
+      border: 1px solid transparent;
+      display: block;
+      padding: .5rem 1rem;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      text-decoration: none;
+      color: #495057;
+      &.active {
+        color: #000;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+      }
+    }
+  }
+  & .pill {
+    flex: 1 1 auto;
+    text-align: center;
+    & .nav-item {
+      display: block;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+      text-decoration: none;
+      color: #000;
+      &.active {
+        color: #fff;
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+
 .small-text {
   font-size: 80%
 }

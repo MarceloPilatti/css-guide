@@ -605,6 +605,109 @@
   transform: scale(0.9);
 }
 
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card hr {
+  margin: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.card.success hr {
+  border-bottom-color: #b1dfbb;
+}
+.card.danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.card.danger hr {
+  border-bottom-color: #f5c6cb;
+}
+.card.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.card.warning hr {
+  border-bottom-color: #ffeeba;
+}
+.card.info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+.card.info hr {
+  border-bottom-color: #bee5eb;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+}
+.card-body h3, .card-body h4 {
+  margin-top: 0;
+}
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+.nav .tab {
+  margin-bottom: -1px;
+}
+.nav .tab .nav-item {
+  border: 1px solid transparent;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  text-decoration: none;
+  color: #495057;
+}
+.nav .tab .nav-item.active {
+  color: #000;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav .pill {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.nav .pill .nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+}
+.nav .pill .nav-item.active {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
 .small-text {
   font-size: 80%;
 }
