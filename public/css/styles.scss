@@ -2,12 +2,17 @@
   --main-color: #2084b3;
   --active-color: #005e8abf;
   --hover-color: #005e8ae6;
+
   --text-main-color: #fff;
+  --text-active-color: #fff;
   --text-hover-color: #cccccc;
 
-  --light-color: #eee;
-  --silver-color: #ccc;
-  --black-color: #000;
+  --border-color: #ced4da;
+  --border-active-color: #ced4da;
+  --border-hover-color: #ced4da;
+
+  --border-radius: .25rem;
+
   --text-shadow: 1px 1px #000
 }
 
@@ -44,14 +49,14 @@
     &.hide-sidebar .sidebar-toggle {
       position: fixed;
       top: 5px;
-      left: 0;
       right: unset;
+      left: 0;
+      border-radius: 0 5px 5px 0;
       background-color: var(--main-color);
       opacity: .5;
-      border-radius: 0 5px 5px 0;
       &:hover {
         opacity: 1;
-        color: #fff
+        color: var(--text-hover-color)
       }
     }
 }
@@ -90,7 +95,7 @@
     flex-direction: column;
     flex: 1 100%;
     & .header-item {
-      border: 1px solid var(--active-color);
+      border-bottom: 1px solid var(--border-color);
     }
   }
   &-item {
@@ -108,7 +113,7 @@
       background-color: var(--active-color);
     }
     &:hover a {
-      color: var(--text-hover-color)
+      color: var(--text-hover-color);
     }
   }
   &-toggle {
@@ -117,7 +122,7 @@
     padding: 8px 0;
     &:hover {
       background-color: var(--active-color);
-      cursor: pointer
+      cursor: pointer;
     }
   }
 }
@@ -195,7 +200,7 @@
       height: 22px;
     }
     &:hover {
-      border-left: 2px solid #ccc;
+      border-left: 2px solid var(--border-hover-color);
       background-color: var(--hover-color);
       cursor: pointer;
     }
@@ -209,7 +214,7 @@
       }
       &:hover {
         background-color: var(--hover-color);
-        border-left: 2px solid #ccc;
+        border-left: 2px solid var(--border-hover-color);
       }
     }
   }
@@ -220,10 +225,9 @@
     align-items: center;
     flex: 0 1 50px;
     & img {
-      padding: .2rem;
-      background-color: #fff;
-      border: 1px solid #dee2e6;
-      border-radius: .25rem;
+      background-color: #e5e5e5;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
       height: 40px;
       width: 40px;
     }
@@ -248,9 +252,9 @@
   grid-area: footer;
   @extend %flex-row-center;
   flex-wrap: wrap;
+  font-weight: bold;
   background-color: var(--main-color);
   color: var(--text-main-color);
-  font-weight: bold;
 }
 
 .collapse {
@@ -279,42 +283,57 @@
   align-items: center;
   text-shadow: var(--text-shadow);
   color: var(--text-main-color);
-  background-color: var(--active-color);
+  background-color: var(--main-color);
   & a {
     display: block;
     width: 100%;
     padding: .75rem;
     font-weight: 600;
-    border: 1px solid var(--main-color);
     @extend %item-link;
   }
 }
 
 .btn {
   display: inline-block;
-  font-weight: bold;
-  color: #eee;
-  text-align: center;
   vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
+  border-radius: var(--border-radius);
   padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
+  user-select: none;
   text-decoration: none;
-  &:active {
-    border: 1px solid transparent;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  &-main {
+    background-color: var(--main-color);
+    color: var(--text-main-color);
+    &:hover,
+    &:active {
+      text-shadow: var(--text-shadow);
+    }
+    &:active {
+      background-color: var(--active-color);
+    }
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+  &-danger {
+    background-color: #c22d3c;
+    color: #000;
+    &:hover,
+    &:active {
+      background-color: #ac3642;
+    }
   }
   &-light {
-    color: #eee;
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-    &:hover {
-      color: #eee;
-      text-shadow: var(--text-shadow);
-      background-color: var(--hover-color);
+    border: 1px solid var(--border-color);
+    background-color: #fdfdfd;
+    color: #000;
+    &:hover,
+    &:active {
+      background-color: #efefef;
     }
   }
   &-block {
@@ -349,8 +368,8 @@
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
     &-sm {
       height: calc(1.5em + .5rem + 2px);
       padding: .25rem .5rem;
@@ -529,7 +548,7 @@
       display: inline-block;
       text-align: center;
       width: 1em;
-      color: var(--silver-color)
+      color: #ccc;
     }
 
     &:checked::after {
@@ -627,7 +646,7 @@
 
 .card {
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-radius: var(--border-radius);
   & hr {
     margin: 1rem 0;
     border-bottom: 1px solid rgba(0,0,0,.125);
@@ -693,8 +712,8 @@
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  border-bottom: 1px solid #dee2e6;
   & .tab {
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: -1px;
     & .nav-item {
       border: 1px solid transparent;
@@ -704,10 +723,14 @@
       border-top-right-radius: 0.25rem;
       text-decoration: none;
       color: #495057;
+      background-color: #fff;
       &.active {
-        color: #000;
-        background-color: #fff;
-        border-color: #dee2e6 #dee2e6 #fff;
+        border-bottom: 2px solid var(--active-color);
+        color: var(--active-color);
+      }
+      &:hover {
+        border-bottom: 2px solid var(--hover-color);
+        color: var(--hover-color);
       }
     }
   }
@@ -717,12 +740,16 @@
     & .nav-item {
       display: block;
       padding: .5rem 1rem;
-      border-radius: .25rem;
+      border-radius: var(--border-radius);
       text-decoration: none;
       color: #000;
       &.active {
-        color: #fff;
-        background-color: var(--main-color);
+        color: var(--text-main-color);
+        background-color: var(--active-color);
+      }
+      &:hover {
+        color: var(--text-main-color);
+        background-color: var(--hover-color);
       }
     }
   }
@@ -774,7 +801,7 @@
     max-width: 100%;
     z-index: 1;
     background-clip: padding-box;
-    border-radius: .25rem;
+    border-radius: var(--border-radius);
     background-color: var(--main-color);
     & a {
       color: var(--text-main-color);
