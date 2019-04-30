@@ -1,0 +1,38 @@
+:root {
+  --main-color: #2084b3;
+  --active-color: #005e8abf;
+  --hover-color: #005e8ae6;
+
+  --text-main-color: #fff;
+  --text-active-color: #fff;
+  --text-hover-color: #cccccc;
+
+  --border-color: #ced4da;
+  --border-active-color: #ced4da;
+  --border-hover-color: #ced4da;
+
+  --border-radius: .25rem;
+
+  --text-shadow: 1px 1px #000;
+  --box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+}
+
+%flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+%item-link {
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: var(--text-shadow);
+  color: var(--text-main-color);
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}

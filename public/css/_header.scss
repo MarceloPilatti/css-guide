@@ -1,0 +1,88 @@
+.header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--main-color);
+  & a {
+    @extend %item-link;
+  }
+  &-brand {
+    @extend %flex-row-center;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    padding: .3125rem 0;
+    margin: 5px 15px;
+    &:hover {
+      color: var(--text-hover-color)
+    }
+    &.hide {
+      display: none;
+    }
+    & img {
+      width: 55px;
+      height: 45px;
+      padding-right: 10px
+    }
+  }
+  &-navbar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 100%;
+    & .header-item {
+      border-bottom: 1px solid var(--border-color);
+    }
+  }
+  &-item {
+    @extend %flex-row-center;
+    padding: 15px;
+    &:hover,
+    &.active {
+      cursor: pointer;
+    }
+    &:hover,
+    &.active:hover {
+      background-color: var(--hover-color);
+    }
+    &.active {
+      background-color: var(--active-color);
+    }
+    &:hover a {
+      color: var(--text-hover-color);
+    }
+  }
+  &-toggle {
+    @extend %flex-row-center;
+    flex: 1 100%;
+    padding: 8px 0;
+    &:hover {
+      background-color: var(--active-color);
+      cursor: pointer;
+    }
+  }
+  @include desktop() {
+    flex-wrap: nowrap;
+    &-toggle {
+      display: none
+    }
+    &-brand {
+      flex-wrap: nowrap
+    }
+    &-navbar {
+      display: flex;
+      flex-direction: row;
+      & .header-item {
+        border: none
+      }
+    }
+    &-item {
+      height: 75px;
+    }
+    & > .collapse {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-height: 250px;
+    }
+  }
+}

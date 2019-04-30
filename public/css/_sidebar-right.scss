@@ -1,0 +1,13 @@
+.sidebar-right {
+  grid-area: sidebar-right;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--main-color);
+  @include desktop() {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 150px
+  }
+}

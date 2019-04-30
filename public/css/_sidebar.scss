@@ -1,0 +1,103 @@
+.sidebar {
+  grid-area: sidebar-left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--main-color);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .75);
+  transition: width 100ms linear;
+  & a {
+    @extend %item-link;
+  }
+  & hr {
+    margin: 0;
+  }
+  &-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 1.5em;
+    &:hover {
+      cursor: pointer;
+      color: var(--text-hover-color)
+    }
+  }
+  &-header {
+    @extend %flex-row-center;
+    padding: 0 15px;
+    flex: 0 1 75px;
+    &-logo img {
+      width: 55px;
+      height: 45px;
+      padding-right: 10px 
+    }
+    &-title {
+      font-size: 1.2rem;
+    }
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    flex: 1;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--main-color);
+    & .sidebar-icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      & .fas {
+        padding: 5px;
+        &:hover {
+          color: var(--text-hover-color);
+          opacity: .5;
+        }
+      }
+    }
+    & img {
+      width: 22px;
+      height: 22px;
+    }
+    &:hover {
+      border-left: 2px solid var(--border-hover-color);
+      background-color: var(--hover-color);
+      cursor: pointer;
+    }
+    .collapse & {
+      padding-left: 20px;
+      background-color: var(--active-color);
+      border: 1px solid var(--main-color);
+      text-align: left;
+      & a {
+        font-size: 90%;
+      }
+      &:hover {
+        background-color: var(--hover-color);
+        border-left: 2px solid var(--border-hover-color);
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 1 50px;
+    & img {
+      background-color: #e5e5e5;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

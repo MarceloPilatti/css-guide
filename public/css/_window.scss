@@ -1,0 +1,45 @@
+.window {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  height: auto;
+  background-color: #fff;
+  &.window-sm {
+    width: 350px;
+  }
+  &.window-lg {
+    width: 640px;
+  }
+  &.window-xl {
+    width: 1024px;
+  }
+  &.window-full {
+    width: 100%;
+  }
+  & div:not(.card) {
+    padding: 1.25rem;
+  }
+  & .card {
+    border: none;
+    border-radius: unset;
+    & .card-header {
+      padding: .5rem 1rem;
+      text-align: left;
+      background-color: #fff;
+    }
+    & .card-body {
+      padding: 1rem;
+    }
+    & .card-footer {
+      padding: .5rem 1rem;
+      text-align: left;
+      background-color: #fff;
+    }
+  }
+}
