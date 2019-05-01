@@ -1,13 +1,13 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  @extend %display-flex;
+  @extend %flex-column;
   border: 1px solid rgba(0,0,0,.125);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   & .collapse {
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    @extend %display-flex;
+    @extend %flex-column;
     overflow: auto;
     max-height: 0;
     text-align: left;
@@ -71,8 +71,8 @@
     }
   }
   &-body {
-    display: flex;
-    flex-direction: column;
+    @extend %display-flex;
+    @extend %flex-column;
     padding: 1.25rem;
     flex: 1;
     & h3, & h4 {

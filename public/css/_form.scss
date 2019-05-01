@@ -42,7 +42,7 @@
     }
   }
   & &-inline {
-    display: flex;
+    @extend %display-flex;
     align-items: center;
     & .form-field {
       flex: 1;
@@ -72,7 +72,7 @@
 .input-group {
   position: relative;
   display: -ms-flexbox;
-  display: flex;
+  @extend %display-flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-align: stretch;
@@ -84,7 +84,7 @@
   &-append,
   &-prepend {
     display: -ms-flexbox;
-    display: flex;
+    @extend %display-flex;
   }
   &>.form-field {
     position: relative;
@@ -103,7 +103,7 @@
   }
   &-text {
     display: -ms-flexbox;
-    display: flex;
+    @extend %display-flex;
     -ms-flex-align: center;
     align-items: center;
     padding: .375rem .75rem;
@@ -123,7 +123,7 @@
 
 .file {
   display: -ms-flexbox;
-  display: flex;
+  @extend %display-flex;
   -ms-flex-align: center;
   align-items: center;
   position: relative;

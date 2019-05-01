@@ -1,9 +1,12 @@
 .header {
   grid-area: header;
-  display: flex;
+  @extend %display-flex;
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--main-color);
+  & ul {
+    @extend %ul-no-style;
+  }
   & a {
     @extend %item-link;
   }
@@ -26,8 +29,8 @@
     }
   }
   &-navbar {
-    display: flex;
-    flex-direction: column;
+    @extend %display-flex;
+    @extend %flex-column;
     flex: 1 100%;
     & .header-item {
       border-bottom: 1px solid var(--border-color);

@@ -20,14 +20,19 @@ const setEvents = () => {
 
     /* Sidebar toggle event */
     document.querySelector("[data-activate='sidebar-toggle']").addEventListener("click", () => {
-        let $gridContainer = document.querySelector("#grid-container");
+        let $gridContainer = document.querySelector(".grid-container");
+        let $sidebar = document.querySelector(".sidebar");
         let $headerBrand = document.querySelector(".header-brand");
-        let isSidebarHidden = $gridContainer.classList.contains("hide-sidebar");
-        if(isSidebarHidden) {
+        let hasHideSidebar = $gridContainer.classList.contains("hide-sidebar");
+        let sidebarWidth = $sidebar.offsetWidth;
+        
+        if(hasHideSidebar || sidebarWidth == 0) {
+            $sidebar.style.width = "100%";
             $gridContainer.classList.remove("hide-sidebar");
             $headerBrand.classList.add("hide");
             return;
         }
+        $sidebar.style.width = "0";
         $gridContainer.classList.add("hide-sidebar");
         $headerBrand.classList.remove("hide");
     });

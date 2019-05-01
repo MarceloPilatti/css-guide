@@ -1,13 +1,16 @@
 .sidebar {
   grid-area: sidebar-left;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  @extend %display-flex;
+  @extend %flex-column;
   overflow: hidden;
-  width: 100%;
+  width: 0;
   background-color: var(--main-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .75);
   transition: width 100ms linear;
+  & ul {
+    @extend %ul-no-style;
+  }
   & a {
     @extend %item-link;
   }
@@ -39,20 +42,20 @@
     }
   }
   &-body {
-    display: flex;
-    flex-direction: column;
+    @extend %display-flex;
+    @extend %flex-column;
     justify-content: space-between;
     overflow: auto;
     flex: 1;
   }
   &-item {
-    display: flex;
+    @extend %display-flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     background-color: var(--main-color);
     & .sidebar-icon-container {
-      display: flex;
+      @extend %display-flex;
       flex-wrap: wrap;
       justify-content: flex-end;
       & .fas {
@@ -87,7 +90,7 @@
     }
   }
   &-footer {
-    display: flex;
+    @extend %display-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;

@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: fit-content(75px) auto 75px 50px;
   grid-template-areas:
     'sidebar-left header'
@@ -9,7 +9,7 @@
     'sidebar-left sidebar-right'
     'sidebar-left footer';
     &.hide-sidebar {
-      grid-template-columns: auto 4fr;
+      grid-template-columns: auto 1fr;
     }
     &.hide-sidebar .sidebar {
       width: 0;
@@ -34,5 +34,9 @@
         'sidebar-left header  header'
         'sidebar-left content sidebar-right'
         'sidebar-left footer  footer';
+      .sidebar {
+        width: 100%;
+      }
     }
+    
 }

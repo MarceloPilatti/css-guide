@@ -17,6 +17,10 @@
   --box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
 }
 
+%display-flex {
+  display: flex;
+}
+
 %flex-row-center {
   display: flex;
   flex-direction: row;
@@ -24,11 +28,22 @@
   align-items: center;
 }
 
+%flex-column {
+  flex-direction: column;
+}
+
 %item-link {
   font-weight: bold;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   color: var(--text-main-color);
+}
+
+%ul-no-style {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 @mixin desktop {
