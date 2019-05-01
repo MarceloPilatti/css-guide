@@ -500,6 +500,9 @@ button:not(:disabled) {
 
 .content {
   grid-area: content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .sidebar-right {
