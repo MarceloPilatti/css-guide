@@ -101,6 +101,11 @@ const setEvents = () => {
             target.setAttribute('data-y', y);
         }
     });
+    flatpickr(".date-range", {
+        mode: "range",
+        minDate: "today",
+        dateFormat: "Y-m-d"
+    })
 }
 
 (()=>{

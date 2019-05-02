@@ -24,6 +24,7 @@
       &:hover {
         border-bottom: 2px solid var(--hover-color);
         color: var(--hover-color);
+        cursor: pointer;
       }
     }
   }
@@ -43,6 +44,7 @@
       &:hover {
         color: var(--text-main-color);
         background-color: var(--hover-color);
+        cursor: pointer;  
       }
     }
   }

@@ -8,7 +8,6 @@
     font-weight: bold;
     margin-bottom: .5rem
   }
-  
   &-field {
     display: block;
     width: 100%;
@@ -71,24 +70,18 @@
 
 .input-group {
   position: relative;
-  display: -ms-flexbox;
   @extend %display-flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-align: stretch;
-  align-items: stretch;
   width: 100%;
   &-prepend {
     margin-right: -1px;
   }
   &-append,
   &-prepend {
-    display: -ms-flexbox;
     @extend %display-flex;
   }
   &>.form-field {
     position: relative;
-    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0;
@@ -101,10 +94,8 @@
       border-bottom-right-radius: 0;
     }
   }
-  &-text {
-    display: -ms-flexbox;
+  &-icon {
     @extend %display-flex;
-    -ms-flex-align: center;
     align-items: center;
     padding: .375rem .75rem;
     margin-bottom: 0;
@@ -114,23 +105,32 @@
     color: #495057;
     text-align: center;
     white-space: nowrap;
-    background-color: #e9ecef;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    &-left {
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &-right {
+      border-left: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 }
 
 .file {
-  display: -ms-flexbox;
   @extend %display-flex;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   display: inline-block;
   width: 100%;
   height: calc(1.5em + .75rem + 2px);
   margin-bottom: 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   & .file-input {
     position: relative;
     z-index: 2;
@@ -238,8 +238,6 @@
     }
     
     &:checked + .slider:before {
-      -webkit-transform: translateX(1rem);
-      -ms-transform: translateX(1rem);
       transform: translateX(1rem);
       background-color: #eee;
       border: #ccc solid 1px;
@@ -254,7 +252,6 @@
     bottom: 0;
     border-radius: 1rem;
     background-color: #ccc;
-    -webkit-transition: .4s;
     transition: .4s;
     &:before {
       position: absolute;
@@ -266,7 +263,6 @@
       border: #ccc solid 1px;
       border-radius: 50%;
       background-color: #eee;
-      -webkit-transition: .4s;
       transition: .4s;
     }
   }
@@ -279,7 +275,6 @@
   & input {
     position: relative;
     appearance: none;
-    -webkit-appearance: none;
     font-size: inherit;
     width: 1em;
     margin: 0;
@@ -331,7 +326,6 @@
 .slider {
   & input {
     appearance: none;
-    -webkit-appearance: none;
     outline: none;
     display: block;
     padding: 0;
@@ -368,7 +362,6 @@
     }
     &::-webkit-slider-thumb {
       appearance: none;
-      -webkit-appearance: none;
       width: .8rem;
       height: .8rem;
       border: none;
@@ -381,7 +374,6 @@
     &::-webkit-slider-thumb:focus,
     &::-webkit-slider-thumb:active {
       appearance: none;
-      -webkit-appearance: none;
       transform: scale(.9);
     }
   }

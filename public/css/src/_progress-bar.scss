@@ -1,0 +1,114 @@
+.progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 290486px;
+    display: block;
+    height: 1rem;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    &.sm {
+        height: .75rem
+    }
+    &.md {
+        height: 1.25rem
+    }
+    &.lg {
+        height: 1.5rem
+    }
+    &::-webkit-progress-bar {
+        background-color: #dbdbdb
+    }
+    
+    &::-webkit-progress-value {
+        background-color: #4a4a4a
+    }
+    
+    &::-moz-progress-bar {
+        background-color: #4a4a4a
+    }
+    
+    &::-ms-fill {
+        background-color: #4a4a4a;
+        border: none
+    }
+    
+    &:indeterminate {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: moveIndeterminate;
+        animation-name: moveIndeterminate;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        background-color: #dbdbdb;
+        background-image: linear-gradient(to right,#4a4a4a 30%,#dbdbdb 30%);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 150% 150%;
+    }
+    
+    &:indeterminate::-webkit-progress-bar {
+        background-color: transparent;
+    }
+    
+    &:indeterminate::-moz-progress-bar {
+        background-color: transparent;
+    }
+    
+    &.main::-webkit-progress-value {
+        background-color: var(--main-color);
+    }
+    
+    &.progress.is-danger:indeterminate::-moz-progress-bar {
+        background-color: var(--main-color);
+    }
+    
+    &.main::-ms-fill {
+        background-color: var(--main-color);
+    }
+    
+    &.main:indeterminate {
+        background-image: linear-gradient(to right,var(--main-color) 30%,#dbdbdb 30%);
+    }
+    
+    &::-webkit-progress-bar {
+        background-color: #dbdbdb
+    }
+    
+    &::-webkit-progress-value {
+        background-color: #4a4a4a
+    }
+    
+    &::-moz-progress-bar {
+        background-color: #4a4a4a
+    }
+    
+    &::-ms-fill {
+        background-color: #4a4a4a;
+        border: none
+    }
+    
+}
+
+@-webkit-keyframes moveIndeterminate {
+    from {
+        background-position: 200% 0
+    }
+
+    to {
+        background-position: -200% 0
+    }
+}
+
+@keyframes moveIndeterminate {
+    from {
+        background-position: 200% 0
+    }
+
+    to {
+        background-position: -200% 0
+    }
+}
