@@ -19,7 +19,6 @@
       background-color: #fff;
       &.active {
         border-bottom: 2px solid var(--active-color);
-        color: var(--active-color);
       }
       &:hover {
         border-bottom: 2px solid var(--hover-color);
