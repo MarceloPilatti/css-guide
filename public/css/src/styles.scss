@@ -51,8 +51,8 @@
 }
 
 .collapse {
-  @include display-flex;
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
   overflow: auto;
   max-height: 0;
   text-align: center;

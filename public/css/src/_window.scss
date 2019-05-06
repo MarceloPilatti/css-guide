@@ -1,6 +1,6 @@
 .window {
-  @include display-flex;
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: 0;
   left: 0;

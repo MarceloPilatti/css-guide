@@ -16,11 +16,11 @@
       display: block;
       padding: .75rem;
       font-weight: 600;
-      @include item-link;
+      @extend %item-link;
     }
     @include media-breakpoint('lg') {
-      @include display-flex;
-      @include flex-column;
+      display: flex;
+      flex-direction: column;
       position: absolute;
       max-width: 100%;
       z-index: 1;

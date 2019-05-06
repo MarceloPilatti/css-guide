@@ -1,5 +1,5 @@
 .nav {
-  @include display-flex;
+  display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin-bottom: 0;

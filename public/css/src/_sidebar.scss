@@ -1,18 +1,18 @@
 .sidebar {
   grid-area: sidebar-left;
   position: relative;
-  @include display-flex;
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   width: 0;
   background-color: var(--main-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .75);
   transition: width 100ms linear;
   & ul {
-    @include ul-no-style;
+    @extend %ul-no-style;
   }
   & a {
-    @include item-link;
+    @extend %item-link;
   }
   & hr {
     margin: 0;
@@ -29,7 +29,7 @@
     }
   }
   &-header {
-    @include flex-row-center;
+    @extend %flex-row-center;
     padding: 0 15px;
     flex: 0 1 75px;
     &-logo img {
@@ -42,20 +42,20 @@
     }
   }
   &-body {
-    @include display-flex;
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     overflow: auto;
     flex: 1;
   }
   &-item {
-    @include display-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     background-color: var(--main-color);
     & .sidebar-icon-container {
-      @include display-flex;
+      display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
       & .fas {
@@ -90,7 +90,7 @@
     }
   }
   &-footer {
-    @include display-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;

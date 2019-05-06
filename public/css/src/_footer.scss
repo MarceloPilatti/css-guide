@@ -1,6 +1,6 @@
 .footer {
   grid-area: footer;
-  @include flex-row-center;
+  @extend %flex-row-center;
   flex-wrap: wrap;
   font-weight: bold;
   background-color: var(--main-color);

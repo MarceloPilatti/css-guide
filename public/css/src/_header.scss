@@ -1,17 +1,17 @@
 .header {
   grid-area: header;
-  @include display-flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--main-color);
   & ul {
-    @include ul-no-style;
+    @extend %ul-no-style;
   }
   & a {
-    @include item-link;
+    @extend %item-link;
   }
   &-brand {
-    @include flex-row-center;
+    @extend %flex-row-center;
     flex-wrap: wrap;
     font-size: 1.25rem;
     padding: .3125rem 0;
@@ -29,15 +29,15 @@
     }
   }
   &-navbar {
-    @include display-flex;
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     flex: 1 100%;
     & .header-item {
       border-bottom: 1px solid var(--border-color);
     }
   }
   &-item {
-    @include flex-row-center;
+    @extend %flex-row-center;
     padding: 15px;
     &:hover,
     &.active {
@@ -55,7 +55,7 @@
     }
   }
   &-toggle {
-    @include flex-row-center;
+    @extend %flex-row-center;
     flex: 1 100%;
     padding: 8px 0;
     &:hover {

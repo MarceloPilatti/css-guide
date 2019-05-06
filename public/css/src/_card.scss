@@ -1,12 +1,12 @@
 .card {
-  @include display-flex;
-  @include flex-column;
+  display: flex;
+  flex-direction: column;
   border: 1px solid rgba(0,0,0,.125);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   & .collapse {
-    @include display-flex;
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     overflow: auto;
     max-height: 0;
@@ -55,8 +55,8 @@
     }
   }
   &-body {
-    @include display-flex;
-    @include flex-column;
+    display: flex;
+    flex-direction: column;
     padding: 1.25rem;
     flex: 1;
     & h3, & h4 {

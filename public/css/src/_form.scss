@@ -61,7 +61,7 @@ textarea.form-field {
 
 .input-group {
   position: relative;
-  @include display-flex;
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   &-prepend {
@@ -69,7 +69,7 @@ textarea.form-field {
   }
   &-append,
   &-prepend {
-    @include display-flex;
+    display: flex;
   }
   &>.form-field {
     position: relative;
@@ -86,7 +86,7 @@ textarea.form-field {
     }
   }
   &-icon {
-    @include display-flex;
+    display: flex;
     align-items: center;
     padding: .375rem .75rem;
     margin-bottom: 0;
@@ -113,7 +113,7 @@ textarea.form-field {
 }
 
 .file {
-  @include display-flex;
+  display: flex;
   align-items: center;
   position: relative;
   display: inline-block;

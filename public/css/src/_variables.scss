@@ -54,29 +54,21 @@ $breakpoints-map: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
   }
 }
 
-@mixin display-flex() {
-  display: flex;
-}
-
-@mixin flex-row-center() {
+%flex-row-center {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flex-column() {
-  flex-direction: column;
-}
-
-@mixin item-link() {
+%item-link {
   font-weight: bold;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   color: var(--text-main-color);
 }
 
-@mixin ul-no-style() {
+%ul-no-style {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
