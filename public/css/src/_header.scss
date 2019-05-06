@@ -1,17 +1,17 @@
 .header {
   grid-area: header;
-  @extend %display-flex;
+  @include display-flex;
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--main-color);
   & ul {
-    @extend %ul-no-style;
+    @include ul-no-style;
   }
   & a {
-    @extend %item-link;
+    @include item-link;
   }
   &-brand {
-    @extend %flex-row-center;
+    @include flex-row-center;
     flex-wrap: wrap;
     font-size: 1.25rem;
     padding: .3125rem 0;
@@ -29,15 +29,15 @@
     }
   }
   &-navbar {
-    @extend %display-flex;
-    @extend %flex-column;
+    @include display-flex;
+    @include flex-column;
     flex: 1 100%;
     & .header-item {
       border-bottom: 1px solid var(--border-color);
     }
   }
   &-item {
-    @extend %flex-row-center;
+    @include flex-row-center;
     padding: 15px;
     &:hover,
     &.active {
@@ -55,7 +55,7 @@
     }
   }
   &-toggle {
-    @extend %flex-row-center;
+    @include flex-row-center;
     flex: 1 100%;
     padding: 8px 0;
     &:hover {
@@ -63,7 +63,7 @@
       cursor: pointer;
     }
   }
-  @include desktop() {
+  @include media-breakpoint('lg') {
     flex-wrap: nowrap;
     &-toggle {
       display: none

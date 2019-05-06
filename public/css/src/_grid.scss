@@ -1,3 +1,10 @@
+%grid-column {
+  position: relative;
+  width: 100%;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
 .grid-container {
   display: grid;
   height: 100%;
@@ -20,14 +27,14 @@
       left: 0;
       right: unset;
       border-radius: 0 5px 5px 0;
-      background-color: var(--main-color);
+      background-color: var(--main-columnor);
       opacity: .5;
       &:hover {
         opacity: 1;
-        color: var(--text-hover-color)
+        color: var(--text-hover-columnor)
       }
     }
-    @include desktop(){
+    @include media-breakpoint('lg') {
       grid-template-columns: 1fr 4fr;
       grid-template-rows: 75px auto 50px;
       grid-template-areas:
@@ -40,62 +47,101 @@
     }
 }
 
-.column {
-  @extend %display-flex;
-  @extend %flex-column;
-  & > .form-label,
-  & > .form-field {
-    margin: .5rem .75rem;
+.grid {
+  display: grid;
+  &-dense {
+    grid-auto-flow: dense;
   }
-  & .center {
-    align-items: stretch;
-    justify-content: flex-start;
+  @for $i from 1 through 10 {
+    &-gap-#{$i} {
+      grid-gap: .25rem * $i;
+      margin: .25rem * $i;
+    }  
+  }
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+    &-column-#{$i} {
+      grid-column: span $i;
+    }
   }
 }
 
-.row {
-  @extend %display-flex;
-  & > .form-label,
-  & > .form-field {
-    margin: .5rem .75rem;
+.flex {
+  display: flex;
+  &-wrap {
+    flex-wrap: wrap;
   }
-  .center {
+  &-center {
     justify-content: center;
     align-items: center;
   }
+  @for $i from 1 through 5 {
+    &-gap-#{$i},
+    &-gap-#{$i} > * {
+      padding-right: .25rem * $i;
+      padding-left: .25rem * $i;
+    }  
+  }
+  @for $i from 1 through 5 {
+    &-grow-#{$i} {
+      flex: $i;
+    }
+    &-shrink-#{$i} {
+      flex: 0 $i;
+    }
+  }
 }
 
-.grow-1 {
-  flex: 1;
+.justify-between {
+  justify-content: space-between;
 }
-.grow-2 {
-  flex: 2;
+.justify-around {
+  justify-content: space-around;
 }
-.grow-3 {
-  flex: 3;
-}
-.grow-4 {
-  flex: 4;
-}
-.grow-5 {
-  flex: 5;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
-.auto {
-  flex: auto;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-@include desktop {
-  .row-md {
-    display: flex;
-    flex-direction: row;
-    & > .form-label,
-    & > .form-field {
-        margin: .5rem .75rem;
+@each $bp in map-keys($breakpoints-map) {
+  $infix: breakpoint-infix($bp);
+  @for $i from 1 through 12 {
+    .col#{$infix}-#{$i} {
+      @extend %grid-column;
+    }
+  }
+  .col#{$infix},
+  .col#{$infix}-auto {
+    @extend %grid-column;
+  }
+  @include media-breakpoint($bp) {
+    .flex#{$infix}-row {
+      flex-direction: row;
+    }
+    .flex#{$infix}-row-reverse {
+      flex-direction: row-reverse;
+    }
+    .flex#{$infix}-column {
+      flex-direction: column;
+    }
+    .flex#{$infix}-column-reverse {
+      flex-direction: column-reverse;
+    }
+    .col#{$infix} {
+      flex: 1 1 0;
+      max-width: 100%;
+    }
+    .col#{$infix}-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+    @for $i from 1 through 12 {
+      .col#{$infix}-#{$i} {
+        flex: 0 0 percentage($i / 12);
+        max-width: percentage($i / 12);
+      }
     }
   }
 }

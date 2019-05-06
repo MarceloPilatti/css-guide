@@ -237,34 +237,30 @@
                 </div>
             </aside>
             <main class="content">
-                <div class="column row-md wrap">
-                    <div class="group auto">
-                        <label class="form-label">Row group</label>
-                        <input type="text" class="form-field" />
-                    </div>
-                    <div class="group auto">
-                        <label class="form-label">Row group</label>
-                        <input type="text" class="form-field" />
-                    </div>
-                    <div class="group auto">
-                        <label class="form-label">Row group</label>
-                        <input type="text" class="form-field" />
-                    </div>
-                    <div class="group auto">
-                        <label class="form-label">Row group</label>
-                        <input type="text" class="form-field" />
-                    </div>
+                <br>
+                <div class="flex flex-row flex-center flex-wrap flex-gap-1">
+                    <label class="form-label">Form inline</label>
+                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
+                    <label class="form-label">Form inline</label>
+                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
                 </div>
-                <div class="column row-md center">
-                    <label class="form-label">Row</label>
-                    <input type="text" class="form-field" />
+                <br><br>
+                <div class="flex flex-column flex-lg-row flex-wrap">
+                    <div class="col">
+                        <label class="form-label">Label</label>
+                        <input type="text" class="form-field" placeholder="Input" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Label</label>
+                        <input type="text" class="form-field" placeholder="Input" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Label</label>
+                        <input type="text" class="form-field" placeholder="Input" />
+                    </div>
                 </div>
                 <br>
-                <div class="column">
-
-                </div>
-                <br>
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="form-label">Sex:</label>
                         <select class="form-field">
@@ -273,14 +269,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="form-label">Observations:</label>
-                        <textarea class="form-field"></textarea>
+                        <textarea class="form-field" rows="5"></textarea>
                     </div>
                 </div>
                 <br>
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="form-label">Username</label>
                         <div class="input-group">
@@ -290,7 +286,7 @@
                     </div>
                 </div>
                 <br />
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <div class="file">
                             <input type="file" class="file-input" id="file" lang="en">
@@ -299,7 +295,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="radio" for="radio1">
                             <input id="radio1" name="radio" type="radio" value="radio1" checked />
@@ -314,7 +310,7 @@
                     </div>
                 </div>
                 <br />
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="checkbox" for="checkbox">
                             <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
@@ -323,7 +319,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="column">
+                <div class="flex flex-column">
                     <div class="group">
                         <label class="switch">
                             <input type="checkbox">
@@ -336,13 +332,82 @@
                 <label class="slider" for="slider">
                     <input id="slider" type="range" min="5" max="100" value="100" />
                 </label>
+                <div class="flex flex-column">
                 <br>
-                <div class="column">
                     <div class="group">
                         <label class="form-label">Date range</label>
                         <div class="input-group">
                             <input type="text" class="form-field date-range">
                             <span class="input-group-icon input-group-icon-right fas fa-calendar"></span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="flex justify-around">
+                    <a class="btn btn-main">Main</a>
+                    <a class="btn btn-success">Success</a>
+                    <a class="btn btn-warning">Warning</a>
+                    <a class="btn btn-danger">Danger</a>
+                    <a class="btn btn-info">Info</a>
+                    <a class="btn btn-secondary">Secondary</a>
+                    <a class="btn btn-light">Light</a>
+                </div>
+                <br>
+                <div class="flex justify-around">
+                    <div class="dropdown">
+                        <a id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-main-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-success-dropdown" class="btn btn-success" data-activate="collapse">Dropdown success&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-success-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-warning-dropdown" class="btn btn-warning" data-activate="collapse">Dropdown warning&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-warning-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-danger-dropdown" class="btn btn-danger" data-activate="collapse">Dropdown danger&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-danger-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-info-dropdown" class="btn btn-info" data-activate="collapse">Dropdown info&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-info-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-secondary-dropdown" class="btn btn-secondary" data-activate="collapse">Dropdown secondary&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-secondary-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a id="btn-light-dropdown" class="btn btn-light" data-activate="collapse">Dropdown light&nbsp;<span class="fas fa-angle-down"></span></a>
+                        <div class="collapse" data-collapse="#btn-light-dropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
                         </div>
                     </div>
                 </div>
@@ -354,12 +419,6 @@
                 <progress class="progress main" value="50" max="100">50%</progress>
                 <br>
                 <progress class="progress main" value="75" max="100">75%</progress>
-                <br>
-                <a class="btn btn-main btn-block">Save</a>
-                <br>
-                <button class="btn btn-danger">Remove</button>
-                <br>
-                <a class="btn btn-light btn-block">Open</a>
                 <br>
                 <span class="loading-spin"></span>
                 <br>
@@ -374,6 +433,84 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
                     </div>
                     <div class="card-footer">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-success">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-success">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-danger">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-warning">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-warning">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-info">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-secondary">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-secondary">
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header card-header-light">
+                        <a>Lorem ipsum dolor sit amet.</a>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                    </div>
+                    <div class="card-footer card-footer-light">
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
@@ -394,6 +531,10 @@
                     <span class="card-alert">Lorem, ipsum dolor.</span>
                 </div>
                 <br>
+                <div class="card card-secondary">
+                        <span class="card-alert">Lorem, ipsum dolor.</span>
+                    </div>
+                <br>
                 <div class="card card-success">
                     <div class="card-body">
                         <h4>Lorem, ipsum dolor.</h4>
@@ -422,6 +563,15 @@
                 </div>
                 <br>
                 <div class="card card-info">
+                    <div class="card-body">
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card card-secondary">
                     <div class="card-body">
                         <h4>Lorem, ipsum dolor.</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>

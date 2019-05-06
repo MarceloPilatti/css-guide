@@ -46,9 +46,22 @@
   }
 }
 
+textarea.form-field {
+  height: auto;
+}
+
+.flex > .form-field {
+  width: auto;
+}
+@include media-breakpoint('md'){
+  .flex > .form-field {
+    width: 100%;
+  } 
+}
+
 .input-group {
   position: relative;
-  @extend %display-flex;
+  @include display-flex;
   flex-wrap: wrap;
   width: 100%;
   &-prepend {
@@ -56,7 +69,7 @@
   }
   &-append,
   &-prepend {
-    @extend %display-flex;
+    @include display-flex;
   }
   &>.form-field {
     position: relative;
@@ -73,7 +86,7 @@
     }
   }
   &-icon {
-    @extend %display-flex;
+    @include display-flex;
     align-items: center;
     padding: .375rem .75rem;
     margin-bottom: 0;
@@ -100,7 +113,7 @@
 }
 
 .file {
-  @extend %display-flex;
+  @include display-flex;
   align-items: center;
   position: relative;
   display: inline-block;

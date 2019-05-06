@@ -26,24 +26,19 @@
       background-color: var(--hover-color);
     }
   }
-  &.btn-danger {
-    background-color: #c22d3c;
-    color: #fff;
-    &:hover,
-    &:active {
-      text-shadow: var(--text-shadow);
-      background-color: #ac3642;
+  @each $name, $color in $colors-map {
+    &.btn-#{$name} {
+      background-color: if($name=='light', $color,darken($color, 40%));
+      border: if($name=='light',1px solid var(--border-color), unset);
+      color: if($name=='light',#000, #fff);
+      &:hover,
+      &:active {
+        text-shadow: if($name=='light',unset, var(--text-shadow));
+        background-color: if($name=='light', darken($color, 5%), darken($color, 45%));
+      }
     }
   }
-  &.btn-light {
-    border: 1px solid var(--border-color);
-    background-color: #fdfdfd;
-    color: #000;
-    &:hover,
-    &:active {
-      background-color: #efefef;
-    }
-  }
+
   &.btn-block {
     display: block;
     width: 100%;

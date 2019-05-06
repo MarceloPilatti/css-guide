@@ -1,13 +1,13 @@
 .card {
-  @extend %display-flex;
-  @extend %flex-column;
+  @include display-flex;
+  @include flex-column;
   border: 1px solid rgba(0,0,0,.125);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   & .collapse {
+    @include display-flex;
+    @include flex-column;
     padding: 0;
-    @extend %display-flex;
-    @extend %flex-column;
     overflow: auto;
     max-height: 0;
     text-align: left;
@@ -26,36 +26,14 @@
     padding: .75rem;
     text-align: center;
   }
-  &.card-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    & hr {
-      border-bottom-color: #b1dfbb;
-    }
-  }
-  &.card-danger {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    & hr {
-      border-bottom-color: #f5c6cb;
-    }
-  }
-  &.card-warning {
-    color: #856404;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
-    & hr {
-      border-bottom-color: #ffeeba;
-    }
-  }
-  &.card-info {
-    color: #0c5460;
-    background-color: #d1ecf1;
-    border-color: #bee5eb;
-    & hr {
-      border-bottom-color: #bee5eb;
+  @each $name, $color in $colors-map {
+    &.card-#{$name} {
+      color: darken($color, 50%);
+      background-color: $color;
+      border-color: darken($color, 5%);
+      & hr {
+        border-bottom-color: darken($color, 10%);
+      }
     }
   }
   &-header {
@@ -64,6 +42,12 @@
     border-bottom: 1px solid rgba(0,0,0,.125);
     text-align: center;
     flex: 0;
+    @each $name, $color in $colors-map {
+      &-#{$name} {
+        background-color: $color;
+        border-color: darken($color, 5%);
+      }
+    }
     & a {
       color: #000;
       text-decoration: none;
@@ -71,8 +55,8 @@
     }
   }
   &-body {
-    @extend %display-flex;
-    @extend %flex-column;
+    @include display-flex;
+    @include flex-column;
     padding: 1.25rem;
     flex: 1;
     & h3, & h4 {
@@ -85,5 +69,11 @@
     background-color: rgba(0,0,0,.03);
     border-top: 1px solid rgba(0,0,0,.125);
     text-align: center;
+    @each $name, $color in $colors-map {
+      &-#{$name} {
+        background-color: $color;
+        border-color: darken($color, 5%);
+      }
+    }
   }
 }

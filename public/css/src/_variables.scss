@@ -1,3 +1,12 @@
+$success: #95e2a6;
+$secondary: #e2e3e5;
+$danger: #f8d7da;
+$warning: #ffecae;
+$info: #b0eaf5;
+$light: #f8f9fa;
+
+$colors-map: (success: $success, secondary: $secondary, danger: $danger, warning: $warning, info: $info, light: #f8f9fa);
+
 :root {
   --main-color: #2084b3;
   --active-color: #005e8ae6;
@@ -15,39 +24,61 @@
 
   --text-shadow: 1px 1px #000;
   --box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+
+  --success: $success;
+  --secondary: $secondary;
+  --danger: $danger;
+  --warning: $warning;
+  --info: $info;
+  --light: $light;
 }
 
-%display-flex {
+$breakpoints-map: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+@function breakpoint-min($name) {
+  $min: map-get($breakpoints-map, $name);
+  @return $min;
+}
+
+@function breakpoint-infix($name) {
+  @return if(breakpoint-min($name) == 0, "", "-#{$name}");
+}
+
+@mixin media-breakpoint($name){
+  $min: breakpoint-min($name);
+  @if $min > 0 {
+    @media (min-width: $min) {
+      @content;
+    }  
+  } @else {
+    @content;
+  }
+}
+
+@mixin display-flex() {
   display: flex;
 }
 
-%flex-row-center {
+@mixin flex-row-center() {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-%flex-column {
+@mixin flex-column() {
   flex-direction: column;
 }
 
-%item-link {
+@mixin item-link() {
   font-weight: bold;
   text-decoration: none;
   text-shadow: var(--text-shadow);
   color: var(--text-main-color);
 }
 
-%ul-no-style {
+@mixin ul-no-style() {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-}
-
-@mixin desktop {
-  @media (min-width: 992px) {
-    @content;
-  }
 }
