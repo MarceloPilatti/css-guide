@@ -5,7 +5,7 @@ $warning: #ffecae;
 $info: #b0eaf5;
 $light: #f8f9fa;
 
-$colors-map: (success: $success, secondary: $secondary, danger: $danger, warning: $warning, info: $info, light: #f8f9fa);
+$colors-map: (success: $success, secondary: $secondary, danger: $danger, warning: $warning, info: $info, light: $light);
 
 :root {
   --main-color: #2084b3;

@@ -43,7 +43,6 @@
                         </a>
                         <div class="collapse" data-collapse="#user-dropdown">
                             <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="#">Settings</a>
                         </div>
                     </div>
                     <a href="#" class="header-item fas fa-power-off">&nbsp;Logout</a>
@@ -121,6 +120,7 @@
                         <ul class="collapse" data-collapse="#staticData">
                             <li class="sidebar-item">
                                 <a href="#">
+                                    <div class="circle circle-red blink"></div>
                                     Data 1
                                     <div class="sidebar-icon-container">
                                         <a class="fas fa-cog" href="#"></a>
@@ -129,6 +129,7 @@
                             </li>
                             <li class="sidebar-item">
                                 <a href="#">
+                                    <div class="circle circle-green blink"></div>
                                     Data 2
                                     <div class="sidebar-icon-container">
                                         <a class="fas fa-cog" href="#"></a>
@@ -137,6 +138,7 @@
                             </li>
                             <li class="sidebar-item">
                                 <a href="#">
+                                    <div class="circle circle-yellow blink"></div>
                                     Data 3
                                     <div class="sidebar-icon-container">
                                         <a class="fas fa-cog" href="#"></a>
@@ -145,6 +147,7 @@
                             </li>
                             <li class="sidebar-item">
                                 <a href="#">
+                                    <div class="circle circle-gray"></div>
                                     Data 4
                                     <div class="sidebar-icon-container">
                                         <a class="fas fa-cog" href="#"></a>
@@ -412,13 +415,29 @@
                     </div>
                 </div>
                 <br>
-                <progress class="progress main" max="100">15%</progress>
+                <progress class="progress main" max="100" value="10">10%</progress>
                 <br>
-                <progress class="progress main" value="25" max="100">25%</progress>
+                <progress class="progress main" max="100"></progress>
                 <br>
-                <progress class="progress main" value="50" max="100">50%</progress>
+                <progress class="progress progress-success" max="100" value="25">25%</progress>
                 <br>
-                <progress class="progress main" value="75" max="100">75%</progress>
+                <progress class="progress progress-success" max="100"></progress>
+                <br>
+                <progress class="progress progress-danger" max="100" value="40">40%</progress>
+                <br>
+                <progress class="progress progress-danger" max="100"></progress>
+                <br>
+                <progress class="progress progress-warning" max="100" value="55">55%</progress>
+                <br>
+                <progress class="progress progress-warning" max="100"></progress>
+                <br>
+                <progress class="progress progress-info" max="100" value="75">75%</progress>
+                <br>
+                <progress class="progress progress-info" max="100"></progress>
+                <br>
+                <progress class="progress progress-light" max="100" value="90">90%</progress>
+                <br>
+                <progress class="progress progress-light" max="100"></progress>
                 <br>
                 <span class="loading-spin"></span>
                 <br>

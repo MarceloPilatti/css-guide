@@ -4,18 +4,23 @@
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+  flex: 1 1 auto;
+  color: #555;
+  & .nav-item {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   & .tab {
-    flex: 1 1 auto;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: -1px;
     & .nav-item {
       border: 1px solid transparent;
-      display: block;
-      padding: .5rem 1rem;
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem;
-      text-decoration: none;
-      color: #495057;
       background-color: #fff;
       &.active {
         border-bottom: 2px solid var(--active-color);
@@ -23,28 +28,18 @@
       &:hover {
         border-bottom: 2px solid var(--hover-color);
         color: var(--hover-color);
-        cursor: pointer;
       }
     }
   }
-  & .pill {
-    flex: 1 1 auto;
-    text-align: center;
-    & .nav-item {
-      display: block;
-      padding: .5rem 1rem;
-      border-radius: var(--border-radius);
-      text-decoration: none;
-      color: #000;
-      &.active {
-        color: var(--text-main-color);
-        background-color: var(--active-color);
-      }
-      &:hover {
-        color: var(--text-main-color);
-        background-color: var(--hover-color);
-        cursor: pointer;  
-      }
+  & .pill .nav-item {
+    border-radius: var(--border-radius);
+    &.active {
+      color: var(--text-main-color);
+      background-color: var(--active-color);
+    }
+    &:hover {
+      color: var(--text-main-color);
+      background-color: var(--hover-color);
     }
   }
 }

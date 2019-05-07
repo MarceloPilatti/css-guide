@@ -50,12 +50,52 @@
   }
 }
 
+.circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border-radius: 50%;
+  &-black {
+    background-color: #000;
+  }
+  &-green {
+    border: 1px solid #35bc35;
+    background-image: radial-gradient(circle, #00ff00, #06f706, #0ef50e, #14ef14, #18ea18, #1de51d, #20df21, #24da25, #29d32a, #2dcb2e, #31c432, #35bc35);
+  }
+  &-red {
+    border: 1px solid #bc3535;
+    background-image: radial-gradient(circle, #ff0000, #f70606, #f50e0e, #ef1414, #ea1818, #e51d1d, #df2120, #da2524, #d32a29, #cb2e2d, #c43231, #bc3535);
+  }
+  &-yellow {
+    border: 1px solid #dada1d;
+    background-image: radial-gradient(circle, #ffff00, #fcfc03, #f9f906, #f7f709, #f4f40c, #f1f10f, #eded12, #eaea14, #e6e617, #e2e219, #dede1b, #dada1d);
+  }
+  &-gray {
+    border: 1px solid #929292;
+    background-image: radial-gradient(circle, #848484, #868686, #878787, #898989, #8b8b8b, #8c8c8c, #8e8e8e, #8f8f8f, #909090, #909190, #919191, #929292);
+  }
+}
+
+.blink {
+  opacity: 0;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .collapse {
   display: flex;
   flex-direction: column;
   overflow: auto;
   max-height: 0;
-  text-align: center;
   transition: max-height 200ms linear;
   &.show {
     width: 100%;

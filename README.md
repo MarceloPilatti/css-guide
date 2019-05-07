@@ -147,7 +147,6 @@ List of shorthand properties:
 - **padding**;
 - **background**;
 - **font**;
-- **list**;
 - **outline**;
 - **border**.
 
@@ -214,41 +213,25 @@ As another example, it makes sense for margin, padding, border, and background-i
 
 List of some inherited properties:
 
-- **:active**;
 - **background**;
-- **border-collapse**;
-- **border-spacing**;
-- **border-width**;
-- **caption-side**;
 - **color**;
 - **cursor**;
 - **font**;
-- **font-family**;
-- **font-size**;
-- **font-size-adjust**;
-- **font-stretch**;
-- **font-style**;
-- **font-variant**;
-- **font-weight**;
-- **font**;
+- **:active**;
 - **:focus**;
+- **:visited**;
+- **:hover**;
 - **:first-child**;
 - **::first-letter**;
 - **::first-line**;
-- **:hover**;
 - **letter-spacing**;
 - **line-height**;
-- **list-style-image**;
-- **list-style-position**;
-- **list-style-type**;
-- **list-style**;
 - **opacity**;
 - **text-align**;
 - **text-indent**;
 - **text-transform**;
 - **text-size-adjust**;
 - **visibility**;
-- **:visited**;
 - **white-space**;
 - **word-spacing**.
 
@@ -289,14 +272,10 @@ There are two types of length units: absolute and relative.
 
 &nbsp; &nbsp; Relative length units specify a length relative to another length property. Relative length units scales better between different rendering mediums.
 
-- **em** - Relative to the font-size of the element (2em means 2 times the size of the current font);
-- **ex** - 	Relative to the x-height of the current font (rarely used);
-- **ch** - Relative to width of the "0" (zero);
-- **rem** - Relative to font-size of the root element;
+- **em** - 1em is the same as the font-size of the current element. The default base font-size given to web pages by web browsers before CSS styling is applied is 16 pixels, which means the computed value of 1em is 16 pixels for an element by default;
+- **rem** - The rem (root em) works in exactly the same way as the em, except that it will always equal the size of the default base font-size. Inherited font sizes will have no effect;
 - **vw** - Relative to 1% of the width of the viewport;
 - **vh** - Relative to 1% of the height of the viewport;
-- **vmin** - Relative to 1% of viewport's* smaller dimension;
-- **vmax** - Relative to 1% of viewport's* larger dimension;
 - **%** - 	Relative to the parent element.
 
 [Back to top](#css-guide)
@@ -340,6 +319,7 @@ There are two types of length units: absolute and relative.
 - **static** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_static)*) - An element with `position: static;` is always positioned according to the normal flow of the page. It is not affected by the top, bottom, left, and right properties (HTML elements are positioned static by default).
 
 - **relative** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative)*) - An element with `position: relative;` is positioned relative to its normal position (It is affected by top, right, bottom, and left properties). Other content will not be adjusted to fit into any gap left by the element;
+
 - **fixed** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed)*) - An element with `position: fixed;` is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element;
 
 - **absolute** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute)*) - An element with `position: absolute;` is positioned relative to the nearest positioned ancestor (except `static` element);
@@ -390,9 +370,26 @@ There are two types of length units: absolute and relative.
 
 - **transition-timing-function** - Specifies the speed curve of the transition effect.
 
-More properties at: https://www.w3schools.com/cssref/default.asp.
+[Back to top](#css-guide)
+
+### **9.6 Animations** (*[details](https://www.w3schools.com/css/css3_animations.asp)*)
+
+&nbsp; &nbsp; An animation lets an element gradually change from one style to another.
+
+- **@keyframes** - Specifies the animation code;
+- **animation-delay** - Specifies a delay for the start of an animation;
+- **animation-direction** - Specifies whether an animation should be played forwards, backwards or in alternate cycles;
+- **animation-duration** - Specifies how long time an animation should take to complete one cycle;
+- **animation-fill-mode** - Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both);
+- **animation-iteration-count** - Specifies the number of times an animation should be played;
+- **animation-name** - Specifies the name of the @keyframes animation;
+- **animation-play-state** - Specifies whether the animation is running or paused;
+- **animation-timing-function** - Specifies the speed curve of the animation.
 
 [Back to top](#css-guide)
+
+
+More properties at: https://www.w3schools.com/cssref/default.asp.
 
 ## **10. Responsiveness**
 
