@@ -42,7 +42,7 @@
       &.collapse.show {
         width: unset;
         text-align: left;
-        box-shadow: 0 2px 5px 0 #0000004d;
+        @include box-shadow(.3);
       }
     }
   }

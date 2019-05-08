@@ -240,462 +240,880 @@
                 </div>
             </aside>
             <main class="content">
-                <br>
-                <div class="flex flex-row flex-center flex-wrap flex-gap-1">
-                    <label class="form-label">Form inline</label>
-                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
-                    <label class="form-label">Form inline</label>
-                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
-                </div>
-                <br><br>
-                <div class="flex flex-column flex-lg-row flex-wrap">
-                    <div class="col">
-                        <label class="form-label">Label</label>
-                        <input type="text" class="form-field" placeholder="Input" />
-                    </div>
-                    <div class="col">
-                        <label class="form-label">Label</label>
-                        <input type="text" class="form-field" placeholder="Input" />
-                    </div>
-                    <div class="col">
-                        <label class="form-label">Label</label>
-                        <input type="text" class="form-field" placeholder="Input" />
-                    </div>
-                </div>
-                <br>
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="form-label">Sex:</label>
-                        <select class="form-field">
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="form-label">Observations:</label>
-                        <textarea class="form-field" rows="5"></textarea>
-                    </div>
-                </div>
-                <br>
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="form-label">Username</label>
-                        <div class="input-group">
-                            <span class="input-group-icon input-group-icon-left">@</span>
-                            <input type="text" class="form-field" placeholder="Username">
+                <ol>
+                    <li><label class="list-style">Links</label>
+                        <hr>
+                        <div class="flex flex-column flex-lg-row justify-around flex-wrap">
+                            <a class="link link-main" href="#">Main</a>
+                            <a class="link link-success" href="#">Success</a>
+                            <a class="link link-danger" href="#">Danger</a>
+                            <a class="link link-warning" href="#">Warning</a>
+                            <a class="link link-info" href="#">Info</a>
+                            <a class="link link-secondary" href="#">Secondary</a>
+                            <a class="link link-light" href="#">Light</a>
                         </div>
-                    </div>
-                </div>
-                <br />
-                <div class="flex flex-column">
-                    <div class="group">
-                        <div class="file">
-                            <input type="file" class="file-input" id="file" lang="en">
-                            <label class="file-label" for="file">Choose file</label>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="radio" for="radio1">
-                            <input id="radio1" name="radio" type="radio" value="radio1" checked />
-                            <span>radio 1</span>
-                        </label>
-                    </div>
-                    <div class="group">
-                        <label class="radio" for="radio2">
-                            <input id="radio2" name="radio" type="radio" value="radio2" />
-                            <span>radio 2</span>
-                        </label>
-                    </div>
-                </div>
-                <br />
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="checkbox" for="checkbox">
-                            <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
-                            <span>checkbox</span>
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div class="flex flex-column">
-                    <div class="group">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                <br />
+                    </li>
 
-                <label class="slider" for="slider">
-                    <input id="slider" type="range" min="5" max="100" value="100" />
-                </label>
-                <div class="flex flex-column">
-                <br>
-                    <div class="group">
-                        <label class="form-label">Date range</label>
-                        <div class="input-group">
-                            <input type="text" class="form-field date-range">
-                            <span class="input-group-icon input-group-icon-right fas fa-calendar"></span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="flex flex-column flex-lg-row justify-around flex-wrap">
-                    <a class="btn btn-main">Main</a>
-                    <a class="btn btn-success">Success</a>
-                    <a class="btn btn-warning">Warning</a>
-                    <a class="btn btn-danger">Danger</a>
-                    <a class="btn btn-info">Info</a>
-                    <a class="btn btn-secondary">Secondary</a>
-                    <a class="btn btn-light">Light</a>
-                </div>
-                <br>
-                <div class="flex flex-column flex-lg-row justify-around flex-wrap">
-                    <div class="dropdown">
-                        <a id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-main-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-success-dropdown" class="btn btn-success" data-activate="collapse">Dropdown success&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-success-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-warning-dropdown" class="btn btn-warning" data-activate="collapse">Dropdown warning&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-warning-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-danger-dropdown" class="btn btn-danger" data-activate="collapse">Dropdown danger&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-danger-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-info-dropdown" class="btn btn-info" data-activate="collapse">Dropdown info&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-info-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-secondary-dropdown" class="btn btn-secondary" data-activate="collapse">Dropdown secondary&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-secondary-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a id="btn-light-dropdown" class="btn btn-light" data-activate="collapse">Dropdown light&nbsp;<span class="fas fa-angle-down"></span></a>
-                        <div class="collapse" data-collapse="#btn-light-dropdown">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <progress class="progress main" max="100" value="10">10%</progress>
-                <br>
-                <progress class="progress main" max="100"></progress>
-                <br>
-                <progress class="progress progress-success" max="100" value="25">25%</progress>
-                <br>
-                <progress class="progress progress-success" max="100"></progress>
-                <br>
-                <progress class="progress progress-danger" max="100" value="40">40%</progress>
-                <br>
-                <progress class="progress progress-danger" max="100"></progress>
-                <br>
-                <progress class="progress progress-warning" max="100" value="55">55%</progress>
-                <br>
-                <progress class="progress progress-warning" max="100"></progress>
-                <br>
-                <progress class="progress progress-info" max="100" value="75">75%</progress>
-                <br>
-                <progress class="progress progress-info" max="100"></progress>
-                <br>
-                <progress class="progress progress-light" max="100" value="90">90%</progress>
-                <br>
-                <progress class="progress progress-light" max="100"></progress>
-                <br>
-                <span class="loading-spin"></span>
-                <br>
-                <div class="loading-grow"></div>
-                <br>
-                <div class="card">
-                    <div class="card-header">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-success">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-success">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-danger">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-danger">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-warning">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-warning">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-info">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-info">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-secondary">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-secondary">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-header card-header-light">
-                        <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                    </div>
-                    <div class="card-footer card-footer-light">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card card-success">
-                    <span class="card-alert">Lorem, ipsum dolor.</span>
-                </div>
-                <br>
-                <div class="card card-danger">
-                    <span class="card-alert">Lorem, ipsum dolor.</span>
-                </div>
-                <br>
-                <div class="card card-warning">
-                    <span class="card-alert">Lorem, ipsum dolor.</span>
-                </div>
-                <br>
-                <div class="card card-info">
-                    <span class="card-alert">Lorem, ipsum dolor.</span>
-                </div>
-                <br>
-                <div class="card card-secondary">
-                        <span class="card-alert">Lorem, ipsum dolor.</span>
-                    </div>
-                <br>
-                <div class="card card-success">
-                    <div class="card-body">
-                        <h4>Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                    <li><label class="list-style">Text color</label>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card card-danger">
-                    <div class="card-body">
-                        <h4>Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card card-warning">
-                    <div class="card-body">
-                        <h4>Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card card-info">
-                    <div class="card-body">
-                        <h4>Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card card-secondary">
-                    <div class="card-body">
-                        <h4>Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div id="card-header-toggle" class="card-header" data-activate="collapse">
-                       <a>Lorem ipsum dolor sit amet.</a>
-                    </div>
-                    <div class="card-body collapse" data-collapse="#card-header-toggle">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet nulla dolores veniam porro itaque quis dicta eum minus sequi, debitis corporis ipsam aut mollitia officiis repellendus esse laborum! Expedita et, natus laborum at dignissimos exercitationem, ipsam molestias id beatae optio magni minima repellendus earum corporis provident voluptatum sint ipsum laboriosam explicabo? Doloremque, facere architecto fuga, minima totam nam dignissimos nostrum asperiores fugiat et quisquam repudiandae a ipsum iusto! Architecto, debitis facere illo molestias quam eligendi recusandae repellat quia corporis inventore laudantium minus, ducimus voluptatem ratione? Ipsa eius ipsam sunt impedit earum deserunt autem corporis, possimus quia dolore facere reiciendis nobis minus illum veritatis, ex alias recusandae et obcaecati animi? Maxime vel modi accusamus neque doloribus corrupti itaque quaerat unde, maiores, ipsa provident facilis, iusto quibusdam ducimus quam. Aut iste exercitationem eius reprehenderit, ea facilis nisi labore doloribus iure itaque nobis soluta sed quibusdam non, vitae, laboriosam sequi nostrum a molestias corporis illo suscipit porro! Itaque, a deleniti at consequatur molestiae aut maxime possimus, doloribus similique quas omnis aspernatur. Vitae, quae. Tempore aspernatur magni magnam officia eum accusamus, aliquid iusto esse cum tenetur explicabo quasi corporis consequatur earum officiis, doloremque eius sapiente dolorum alias ullam harum inventore consectetur, ea sit. Vero facere ipsum tempore saepe maiores dolores esse sunt error inventore animi. Eaque cumque, debitis quas, nesciunt recusandae aliquam cupiditate id, maxime omnis sint expedita placeat repellendus voluptas voluptatem maiores accusamus magnam doloribus dolore laboriosam. Excepturi amet, facilis veritatis ut accusantium animi neque libero rem architecto? Ratione asperiores deleniti dolores omnis quis ipsam reprehenderit aliquam sed laborum nesciunt doloribus ex impedit sit ullam perferendis obcaecati temporibus animi, porro eos in praesentium? Tempora enim praesentium libero harum quo beatae adipisci assumenda nostrum neque alias ab eius consequatur possimus modi eum excepturi inventore at similique repellat eligendi, et blanditiis! Quisquam, asperiores ab.</p>
-                    </div>
-                </div>
-                <br>
-                <ul class="nav">
-                    <li class="tab"><a class="nav-item active">Tab 1</a></li>
-                    <li class="tab"><a class="nav-item">Tab 2</a></li>
-                    <li class="tab"><a class="nav-item">Tab 3</a></li>
-                </ul>
-                <br>
-                <ul class="nav">
-                    <li class="pill"><a class="nav-item active">Tab 1</a></li>
-                    <li class="pill"><a class="nav-item">Tab 2</a></li>
-                    <li class="pill"><a class="nav-item">Tab 3</a></li>
-                </ul>
-                <br>
-                <div class="table-responsive">
-                <table class="table table-bordered table-striped table-hoverable">
-                    <thead>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                        <th>Header 3</th>
-                        <th>Header 4</th>
-                        <th>Header 5</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                        </tr>
-                        <tr>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 5</td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <div class="flex flex-column flex-lg-row justify-around flex-wrap">
+                            <label class="text-main">Main</label>
+                            <label class="text-success">Success</label>
+                            <label class="text-danger">Danger</label>
+                            <label class="text-warning">Warning</label>
+                            <label class="text-info">Info</label>
+                            <label class="text-secondary">Secondary</label>
+                            <label class="text-light">Light</label>
+                        </div>
+                    </li>
+
+                    <li><label class="list-style">Form</label>
+                        <ol>
+                            <li>
+                                <label class="list-style">Input</label>
+                                <input type="text" class="form-field" placeholder="Input" />
+                            </li>
+                            <li>
+                                <label class="list-style">Input group</label>
+                                <div class="input-group">
+                                    <span class="input-group-icon input-group-icon-left">@</span>
+                                    <input type="text" class="form-field" placeholder="Username">
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">Textarea</label>
+                                <textarea class="form-field" rows="5"></textarea>
+                            </li>
+                            <li>
+                                <label class="list-style">Select</label>
+                                <select class="form-field">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="4">Option 4</option>
+                                    <option value="5">Option 5</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label class="list-style">Checkbox</label>
+                                <br>
+                                <label class="checkbox" for="checkbox">
+                                    <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                    <span>checkbox</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="list-style">Radio button</label>
+                                <br>
+                                <label class="radio" for="radio1">
+                                    <input id="radio1" name="radio" type="radio" value="radio1" checked />
+                                    <span>radio 1</span>
+                                </label>
+                                <label class="radio" for="radio2">
+                                    <input id="radio2" name="radio" type="radio" value="radio2" checked />
+                                    <span>Radio 2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="list-style">Slider</label>
+                                <br>
+                                <label class="slider" for="slider">
+                                    <input id="slider" type="range" min="5" max="100" value="100" />
+                                </label>
+                            </li>
+                            <li>
+                                <label class="list-style">Date</label>
+                                <br>
+                                <label class="form-label">Date range</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-field date-range">
+                                    <span class="input-group-icon input-group-icon-right fas fa-calendar"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">File</label>
+                                <div class="file">
+                                    <input type="file" class="file-input" id="file" lang="en">
+                                    <label class="file-label" for="file">Choose file</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">Switch</label>
+                                <div class="flex flex-row flex-center flex-wrap justify-around">
+                                    <label class="switch switch-main">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-success">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-danger">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-warning">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-info">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-secondary">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <label class="switch switch-light">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">Form inline</label>
+                                <div class="flex flex-row flex-center flex-wrap flex-gap-1">
+                                    <label class="form-label">Form inline</label>
+                                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
+                                    <label class="form-label">Form inline</label>
+                                    <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
+                                </div>
+                                <br>
+                                <div class="flex flex-column flex-lg-row flex-wrap">
+                                    <div class="col">
+                                        <label class="form-label">Label</label>
+                                        <input type="text" class="form-field" placeholder="Input" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">Label</label>
+                                        <input type="text" class="form-field" placeholder="Input" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="form-label">Label</label>
+                                        <input type="text" class="form-field" placeholder="Input" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+
+                    </li>
+
+                    <li><label class="list-style">Buttons</label>
+                        <br>
+                        <div class="flex flex-column flex-lg-row justify-around flex-wrap">
+                            <a class="btn btn-main">Main</a>
+                            <a class="btn btn-success">Success</a>
+                            <a class="btn btn-warning">Warning</a>
+                            <a class="btn btn-danger">Danger</a>
+                            <a class="btn btn-info">Info</a>
+                            <a class="btn btn-secondary">Secondary</a>
+                            <a class="btn btn-light">Light</a>
+                        </div>
+                    </li>
+
+                    <li><label class="list-style">Dropdown</label>
+                        <div class="flex flex-column flex-lg-row justify-around flex-wrap">
+                            <div class="dropdown">
+                                <a id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-main-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-success-dropdown" class="btn btn-success" data-activate="collapse">Dropdown success&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-success-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-warning-dropdown" class="btn btn-warning" data-activate="collapse">Dropdown warning&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-warning-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-danger-dropdown" class="btn btn-danger" data-activate="collapse">Dropdown danger&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-danger-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-info-dropdown" class="btn btn-info" data-activate="collapse">Dropdown info&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-info-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-secondary-dropdown" class="btn btn-secondary" data-activate="collapse">Dropdown secondary&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-secondary-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a id="btn-light-dropdown" class="btn btn-light" data-activate="collapse">Dropdown light&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <div class="collapse" data-collapse="#btn-light-dropdown">
+                                    <a class="dropdown-item" href="#">Item 1</a>
+                                    <a class="dropdown-item" href="#">Item 2</a>
+                                    <a class="dropdown-item" href="#">Item 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><label class="list-style">Progress bar</label>
+                        <progress class="progress main" max="100" value="10">10%</progress>
+                        <br>
+                        <progress class="progress main" max="100"></progress>
+                        <br>
+                        <progress class="progress progress-success" max="100" value="25">25%</progress>
+                        <br>
+                        <progress class="progress progress-success" max="100"></progress>
+                        <br>
+                        <progress class="progress progress-danger" max="100" value="40">40%</progress>
+                        <br>
+                        <progress class="progress progress-danger" max="100"></progress>
+                        <br>
+                        <progress class="progress progress-warning" max="100" value="55">55%</progress>
+                        <br>
+                        <progress class="progress progress-warning" max="100"></progress>
+                        <br>
+                        <progress class="progress progress-info" max="100" value="75">75%</progress>
+                        <br>
+                        <progress class="progress progress-info" max="100"></progress>
+                        <br>
+                        <progress class="progress progress-light" max="100" value="90">90%</progress>
+                        <br>
+                        <progress class="progress progress-light" max="100"></progress>
+                    </li>
+
+                    <li><label class="list-style">Loading</label>
+                        <span class="loading-spin"></span>
+                        <br>
+                        <div class="loading-grow"></div>
+                    </li>
+
+                    <li><label class="list-style">Card</label>
+                        <ol>
+                            <li>
+                                <label class="list-style">Card default</label>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-main">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-main">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-success">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-success">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-danger">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-danger">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-warning">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-warning">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-info">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-info">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-secondary">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-secondary">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header card-header-light">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                    </div>
+                                    <div class="card-footer card-footer-light">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">Card alert</label>
+                                <div class="card card-main">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-success">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-danger">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-warning">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-info">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-secondary">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-light">
+                                    <span class="card-alert">Lorem, ipsum dolor.</span>
+                                </div>
+                                <br>
+                                <div class="card card-main">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-success">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-danger">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-warning">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-info">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-secondary">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card card-light">
+                                    <div class="card-body">
+                                        <h4>Lorem, ipsum dolor.</h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, expedita a distinctio aliquam vel voluptatibus iusto mollitia ipsum nam corrupti.</p>
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, possimus!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="list-style">Card collapsible</label>
+                                <div class="card">
+                                    <div id="card-header-toggle" class="card-header" data-activate="collapse">
+                                        <a>Lorem ipsum dolor sit amet.</a>
+                                    </div>
+                                    <div class="card-body collapse" data-collapse="#card-header-toggle">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet nulla dolores veniam porro itaque quis dicta eum minus sequi, debitis corporis ipsam aut mollitia officiis repellendus esse laborum! Expedita et, natus laborum at dignissimos exercitationem, ipsam molestias id beatae optio magni minima repellendus earum corporis provident voluptatum sint ipsum laboriosam explicabo? Doloremque, facere architecto fuga, minima totam nam dignissimos nostrum asperiores fugiat et quisquam repudiandae a ipsum iusto! Architecto, debitis facere illo molestias quam eligendi recusandae repellat quia corporis inventore laudantium minus, ducimus voluptatem ratione? Ipsa eius ipsam sunt impedit earum deserunt autem corporis, possimus quia dolore facere reiciendis nobis minus illum veritatis, ex alias recusandae et obcaecati animi? Maxime vel modi accusamus neque doloribus corrupti itaque quaerat unde, maiores, ipsa provident facilis, iusto quibusdam ducimus quam. Aut iste exercitationem eius reprehenderit, ea facilis nisi labore doloribus iure itaque nobis soluta sed quibusdam non, vitae, laboriosam sequi nostrum a molestias corporis illo suscipit porro! Itaque, a deleniti at consequatur molestiae aut maxime possimus, doloribus similique quas omnis aspernatur. Vitae, quae. Tempore aspernatur magni magnam officia eum accusamus, aliquid iusto esse cum tenetur explicabo quasi corporis consequatur earum officiis, doloremque eius sapiente dolorum alias ullam harum inventore consectetur, ea sit. Vero facere ipsum tempore saepe maiores dolores esse sunt error inventore animi. Eaque cumque, debitis quas, nesciunt recusandae aliquam cupiditate id, maxime omnis sint expedita placeat repellendus voluptas voluptatem maiores accusamus magnam doloribus dolore laboriosam. Excepturi amet, facilis veritatis ut accusantium animi neque libero rem architecto? Ratione asperiores deleniti dolores omnis quis ipsam reprehenderit aliquam sed laborum nesciunt doloribus ex impedit sit ullam perferendis obcaecati temporibus animi, porro eos in praesentium? Tempora enim praesentium libero harum quo beatae adipisci assumenda nostrum neque alias ab eius consequatur possimus modi eum excepturi inventore at similique repellat eligendi, et blanditiis! Quisquam, asperiores ab.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li><label class="list-style">Nav</label>
+                        <ol>
+                            <li>
+                                <label class="list-style">Nav tab</label>
+                                <ul class="nav">
+                                    <li class="tab"><a class="nav-item active">Tab 1</a></li>
+                                    <li class="tab"><a class="nav-item">Tab 2</a></li>
+                                    <li class="tab"><a class="nav-item">Tab 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="list-style">Nav pill</label>
+                                <ul class="nav">
+                                    <li class="pill"><a class="nav-item active">Pill 1</a></li>
+                                    <li class="pill"><a class="nav-item">Pill 2</a></li>
+                                    <li class="pill"><a class="nav-item">Pill 3</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li><label class="list-style">Table</label>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-main">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-success">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-danger">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-warning">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-info">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-secondary">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hoverable table-light">
+                                <thead>
+                                    <th>Header 1</th>
+                                    <th>Header 2</th>
+                                    <th>Header 3</th>
+                                    <th>Header 4</th>
+                                    <th>Header 5</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                        <td>Cell 5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+
+                    <li><label class="list-style">Window</label>
+                        <div class="window window-sm draggable">
+                            <div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur provident iusto quidem explicabo temporibus odio delectus voluptatem velit eveniet ipsa quibusdam sint perspiciatis eaque unde in reiciendis, voluptas quos molestiae dolor eos eius? Exercitationem natus nesciunt impedit commodi adipisci alias eaque veritatis tempora hic, voluptate, beatae ut consequuntur esse aspernatur quas non illo enim doloribus repellendus corporis recusandae nihil nobis culpa voluptatum! Voluptatem sunt cumque, iste a cupiditate numquam, maiores sint ipsum vero sit nihil earum neque voluptas perferendis tenetur. Aspernatur nobis facere ipsam possimus quod, assumenda rem enim magni quis nam odit hic repellat pariatur quae neque ratione dolorum commodi eligendi. Velit numquam non impedit, neque, quidem delectus maiores modi voluptate veritatis, id sequi sunt saepe deserunt? Laudantium, repellendus, harum neque rem ipsum laborum amet aperiam quam totam exercitationem blanditiis accusantium vitae eos. Quisquam dolor incidunt quod totam voluptates inventore ab suscipit dolorum maiores, labore officiis praesentium quos voluptatum mollitia id! Accusamus nesciunt excepturi illum nam unde officia, autem consequatur obcaecati earum ducimus, quam voluptatibus doloribus, quidem vitae error harum. Nostrum magni placeat unde molestiae? Totam, dolorem! Nemo corrupti hic odio tempore minus tenetur, et ad architecto accusantium? Fugit deserunt praesentium officiis esse, consequatur cum aspernatur explicabo veniam!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="window window-sm draggable">
+                            <div class="card">
+                                <div class="card-header">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                                <div class="card-body">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
             </div>
-
-                <!-- <div class="window window-sm draggable">
-                    <div>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur provident iusto quidem explicabo temporibus odio delectus voluptatem velit eveniet ipsa quibusdam sint perspiciatis eaque unde in reiciendis, voluptas quos molestiae dolor eos eius? Exercitationem natus nesciunt impedit commodi adipisci alias eaque veritatis tempora hic, voluptate, beatae ut consequuntur esse aspernatur quas non illo enim doloribus repellendus corporis recusandae nihil nobis culpa voluptatum! Voluptatem sunt cumque, iste a cupiditate numquam, maiores sint ipsum vero sit nihil earum neque voluptas perferendis tenetur. Aspernatur nobis facere ipsam possimus quod, assumenda rem enim magni quis nam odit hic repellat pariatur quae neque ratione dolorum commodi eligendi. Velit numquam non impedit, neque, quidem delectus maiores modi voluptate veritatis, id sequi sunt saepe deserunt? Laudantium, repellendus, harum neque rem ipsum laborum amet aperiam quam totam exercitationem blanditiis accusantium vitae eos. Quisquam dolor incidunt quod totam voluptates inventore ab suscipit dolorum maiores, labore officiis praesentium quos voluptatum mollitia id! Accusamus nesciunt excepturi illum nam unde officia, autem consequatur obcaecati earum ducimus, quam voluptatibus doloribus, quidem vitae error harum. Nostrum magni placeat unde molestiae? Totam, dolorem! Nemo corrupti hic odio tempore minus tenetur, et ad architecto accusantium? Fugit deserunt praesentium officiis esse, consequatur cum aspernatur explicabo veniam!
-                    </div>
-                </div>
-                <br>
-                <div class="window window-sm draggable">
-                    <div class="card">
-                        <div class="card-header">
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                        <div class="card-body">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nulla magnam cumque nostrum fugit! Libero accusamus nemo atque et autem.</p>
-                        </div>
-                        <div class="card-footer">
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
-                    </div>
-                </div> -->
-
             </main>
             <aside class="sidebar-right"></aside>
             <footer class="footer"></footer>
         </div>
-        <!-- <script src="/js/all.min.js"></script> -->
         <script src="/js/flatpickr.min.js"></script>
         <script src="/js/interact.min.js"></script>
         <script src="/js/app.js"></script>

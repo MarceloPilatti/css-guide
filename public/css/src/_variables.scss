@@ -4,8 +4,9 @@ $danger: #f8d7da;
 $warning: #ffecae;
 $info: #b0eaf5;
 $light: #f8f9fa;
+$main: #aedbf1;
 
-$colors-map: (success: $success, secondary: $secondary, danger: $danger, warning: $warning, info: $info, light: $light);
+$colors-map: (main: $main, success: $success, secondary: $secondary, danger: $danger, warning: $warning, info: $info, light: $light);
 
 :root {
   --main-color: #2084b3;
@@ -31,6 +32,10 @@ $colors-map: (success: $success, secondary: $secondary, danger: $danger, warning
   --warning: $warning;
   --info: $info;
   --light: $light;
+}
+
+@mixin box-shadow($opacity) {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, $opacity);
 }
 
 $breakpoints-map: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);

@@ -35,8 +35,12 @@
     }
     
     &:indeterminate {
+        background-color: #dbdbdb;
+        background-image: linear-gradient(to right,#4a4a4a 30%,#dbdbdb 30%);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 150% 150%;
         animation: moveIndeterminate 1.5s linear infinite;
-        background: #dbdbdb linear-gradient(to right,#4a4a4a 30%,#dbdbdb 30%) top left 150% 150% no-repeat;
     }
     
     &:indeterminate::-webkit-progress-bar {

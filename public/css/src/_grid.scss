@@ -27,11 +27,11 @@
       left: 0;
       right: unset;
       border-radius: 0 5px 5px 0;
-      background-color: var(--main-columnor);
+      background-color: var(--main-color);
       opacity: .5;
       &:hover {
         opacity: 1;
-        color: var(--text-hover-columnor)
+        color: var(--text-hover-color)
       }
     }
     @include media-breakpoint('lg') {

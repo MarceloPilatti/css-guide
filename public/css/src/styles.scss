@@ -14,7 +14,9 @@
 'table', 
 'dropdown',
 'progress-bar',
-'nav';
+'nav',
+'text'
+;
 
 .loading-spin {
   display: inline-block;
@@ -109,10 +111,6 @@
 
 .small-text {
   font-size: 80%
-}
-
-.draggable {
-  touch-action: none;
 }
 
 .box {

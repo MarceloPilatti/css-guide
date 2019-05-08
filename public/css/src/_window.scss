@@ -6,10 +6,13 @@
   left: 0;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  @include box-shadow(.1);
   overflow: auto;
   height: auto;
   background-color: #fff;
+  &.draggable {
+    touch-action: none;
+  }
   &.window-sm {
     width: 350px;
   }

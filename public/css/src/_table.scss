@@ -8,10 +8,9 @@
 .table {
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: #fff;
   color: #363636;
   width: 100%;
-  box-shadow: var(--box-shadow);
+  @include box-shadow(.1);
   & thead td,
   & thead th {
     border-width: 0 0 2px;
@@ -44,5 +43,12 @@
   &.table-bordered thead tr:last-child td,
   &.table-bordered thead tr:last-child th {
     border-bottom-width: 2px;
+  }
+
+  @each $name, $color in $colors-map {
+    &.table-#{$name} thead th {
+      background-color: if($name=='light', $color,darken($color, 40%));
+      color: if($name=='light',#000, #fff);
+    }
   }
 }

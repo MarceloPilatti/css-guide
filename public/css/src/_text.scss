@@ -1,0 +1,57 @@
+.link {
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    @each $name, $color in $colors-map {
+        &.link-#{$name} {
+            color: darken($color, 40%);
+            &:before {
+                background-color: darken($color, 40%);
+            }
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--main-color);
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all .2s cubic-bezier(1,.25,0,.75);
+    }
+    &:hover {
+        text-shadow: 2px 2px 4px #ccc;
+        &:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+    }
+}
+
+.list-style {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+@each $name, $color in $colors-map {
+    .text-#{$name} {
+        color: darken($color, 40%);
+    }
+}
+ol {
+    list-style: none;
+    counter-reset: counter;
+    & > li {
+        counter-increment: counter;
+        padding: 1rem;
+        &::before {
+            content: counter(counter) ". ";
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}

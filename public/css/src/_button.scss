@@ -10,22 +10,8 @@
   text-align: center;
   font-weight: bold;
   background-color: transparent;
-  box-shadow: var(--box-shadow);
+  @include box-shadow(.1);
   border: 0;
-  &.btn-main {
-    background-color: var(--main-color);
-    color: var(--text-main-color);
-    &:hover,
-    &:active {
-      text-shadow: var(--text-shadow);
-    }
-    &:active {
-      background-color: var(--active-color);
-    }
-    &:hover {
-      background-color: var(--hover-color);
-    }
-  }
   @each $name, $color in $colors-map {
     &.btn-#{$name} {
       background-color: if($name=='light', $color,darken($color, 40%));
