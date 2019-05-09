@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="/css/flatpickr.min.css">
         <link rel="stylesheet" href="/css/all.min.css">
         <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
     </head>
     <body>
         <div class="grid-container">
@@ -58,7 +59,7 @@
                     <a class="sidebar-header-title" href="/">TerraMA²</a>
                 </div>
                 <hr>
-                <div class="sidebar-body">
+                <div class="sidebar-body scrollbar">
                     <ul>
                         <li id="projects" class="sidebar-item" data-activate="collapse">
                             <a href="#">Projects</a>
@@ -241,7 +242,7 @@
             </aside>
             <main class="content">
                 <ol>
-                    <li><label class="list-style">Links</label>
+                    <li><label>Links</label>
                         <hr>
                         <div class="flex flex-column flex-lg-row justify-around flex-wrap">
                             <a class="link link-main" href="#">Main</a>
@@ -254,7 +255,7 @@
                         </div>
                     </li>
 
-                    <li><label class="list-style">Text color</label>
+                    <li><label>Text color</label>
                         <hr>
                         <div class="flex flex-column flex-lg-row justify-around flex-wrap">
                             <label class="text-main">Main</label>
@@ -267,25 +268,25 @@
                         </div>
                     </li>
 
-                    <li><label class="list-style">Form</label>
+                    <li><label>Form</label>
                         <ol>
                             <li>
-                                <label class="list-style">Input</label>
+                                <label>Input</label>
                                 <input type="text" class="form-field" placeholder="Input" />
                             </li>
                             <li>
-                                <label class="list-style">Input group</label>
+                                <label>Input group</label>
                                 <div class="input-group">
                                     <span class="input-group-icon input-group-icon-left">@</span>
                                     <input type="text" class="form-field" placeholder="Username">
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">Textarea</label>
+                                <label>Textarea</label>
                                 <textarea class="form-field" rows="5"></textarea>
                             </li>
                             <li>
-                                <label class="list-style">Select</label>
+                                <label>Select</label>
                                 <select class="form-field">
                                     <option value="1">Option 1</option>
                                     <option value="2">Option 2</option>
@@ -295,7 +296,7 @@
                                 </select>
                             </li>
                             <li>
-                                <label class="list-style">Checkbox</label>
+                                <label>Checkbox</label>
                                 <br>
                                 <label class="checkbox" for="checkbox">
                                     <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
@@ -303,7 +304,7 @@
                                 </label>
                             </li>
                             <li>
-                                <label class="list-style">Radio button</label>
+                                <label>Radio button</label>
                                 <br>
                                 <label class="radio" for="radio1">
                                     <input id="radio1" name="radio" type="radio" value="radio1" checked />
@@ -315,14 +316,14 @@
                                 </label>
                             </li>
                             <li>
-                                <label class="list-style">Slider</label>
+                                <label>Slider</label>
                                 <br>
                                 <label class="slider" for="slider">
                                     <input id="slider" type="range" min="5" max="100" value="100" />
                                 </label>
                             </li>
                             <li>
-                                <label class="list-style">Date</label>
+                                <label>Date</label>
                                 <br>
                                 <label class="form-label">Date range</label>
                                     <div class="input-group">
@@ -331,14 +332,14 @@
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">File</label>
+                                <label>File</label>
                                 <div class="file">
                                     <input type="file" class="file-input" id="file" lang="en">
                                     <label class="file-label" for="file">Choose file</label>
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">Switch</label>
+                                <label>Switch</label>
                                 <div class="flex flex-row flex-center flex-wrap justify-around">
                                     <label class="switch switch-main">
                                         <input type="checkbox">
@@ -371,7 +372,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">Form inline</label>
+                                <label>Form inline</label>
                                 <div class="flex flex-row flex-center flex-wrap flex-gap-1">
                                     <label class="form-label">Form inline</label>
                                     <input type="text" class="form-field flex-grow-1" placeholder="Form inline" />
@@ -382,7 +383,7 @@
                                 <div class="flex flex-column flex-lg-row flex-wrap">
                                     <div class="col">
                                         <label class="form-label">Label</label>
-                                        <input type="text" class="form-field" placeholder="Input" />
+                                        <input type="text" class="form-field danger" placeholder="Input" />
                                     </div>
                                     <div class="col">
                                         <label class="form-label">Label</label>
@@ -398,7 +399,7 @@
 
                     </li>
 
-                    <li><label class="list-style">Buttons</label>
+                    <li><label>Buttons</label>
                         <br>
                         <div class="flex flex-column flex-lg-row justify-around flex-wrap">
                             <a class="btn btn-main">Main</a>
@@ -411,7 +412,7 @@
                         </div>
                     </li>
 
-                    <li><label class="list-style">Dropdown</label>
+                    <li><label>Dropdown</label>
                         <div class="flex flex-column flex-lg-row justify-around flex-wrap">
                             <div class="dropdown">
                                 <a id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></a>
@@ -472,7 +473,7 @@
                         </div>
                     </li>
 
-                    <li><label class="list-style">Progress bar</label>
+                    <li><label>Progress bar</label>
                         <progress class="progress main" max="100" value="10">10%</progress>
                         <br>
                         <progress class="progress main" max="100"></progress>
@@ -498,16 +499,16 @@
                         <progress class="progress progress-light" max="100"></progress>
                     </li>
 
-                    <li><label class="list-style">Loading</label>
+                    <li><label>Loading</label>
                         <span class="loading-spin"></span>
                         <br>
                         <div class="loading-grow"></div>
                     </li>
 
-                    <li><label class="list-style">Card</label>
+                    <li><label>Card</label>
                         <ol>
                             <li>
-                                <label class="list-style">Card default</label>
+                                <label>Card default</label>
                                 <div class="card">
                                     <div class="card-body">
                                         <h3>Lorem, ipsum dolor.</h3>
@@ -620,7 +621,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">Card alert</label>
+                                <label>Card alert</label>
                                 <div class="card card-main">
                                     <span class="card-alert">Lorem, ipsum dolor.</span>
                                 </div>
@@ -713,7 +714,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label class="list-style">Card collapsible</label>
+                                <label>Card collapsible</label>
                                 <div class="card">
                                     <div id="card-header-toggle" class="card-header" data-activate="collapse">
                                         <a>Lorem ipsum dolor sit amet.</a>
@@ -727,10 +728,10 @@
                         </ol>
                     </li>
 
-                    <li><label class="list-style">Nav</label>
+                    <li><label>Nav</label>
                         <ol>
                             <li>
-                                <label class="list-style">Nav tab</label>
+                                <label>Nav tab</label>
                                 <ul class="nav">
                                     <li class="tab"><a class="nav-item active">Tab 1</a></li>
                                     <li class="tab"><a class="nav-item">Tab 2</a></li>
@@ -738,7 +739,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <label class="list-style">Nav pill</label>
+                                <label>Nav pill</label>
                                 <ul class="nav">
                                     <li class="pill"><a class="nav-item active">Pill 1</a></li>
                                     <li class="pill"><a class="nav-item">Pill 2</a></li>
@@ -748,7 +749,7 @@
                         </ol>
                     </li>
 
-                    <li><label class="list-style">Table</label>
+                    <li><label>Table</label>
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped table-hoverable">
                                 <thead>
@@ -1086,7 +1087,7 @@
                         </div>
                     </li>
 
-                    <li><label class="list-style">Window</label>
+                    <li><label>Window</label>
                         <div class="window window-sm draggable">
                             <div>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aspernatur provident iusto quidem explicabo temporibus odio delectus voluptatem velit eveniet ipsa quibusdam sint perspiciatis eaque unde in reiciendis, voluptas quos molestiae dolor eos eius? Exercitationem natus nesciunt impedit commodi adipisci alias eaque veritatis tempora hic, voluptate, beatae ut consequuntur esse aspernatur quas non illo enim doloribus repellendus corporis recusandae nihil nobis culpa voluptatum! Voluptatem sunt cumque, iste a cupiditate numquam, maiores sint ipsum vero sit nihil earum neque voluptas perferendis tenetur. Aspernatur nobis facere ipsam possimus quod, assumenda rem enim magni quis nam odit hic repellat pariatur quae neque ratione dolorum commodi eligendi. Velit numquam non impedit, neque, quidem delectus maiores modi voluptate veritatis, id sequi sunt saepe deserunt? Laudantium, repellendus, harum neque rem ipsum laborum amet aperiam quam totam exercitationem blanditiis accusantium vitae eos. Quisquam dolor incidunt quod totam voluptates inventore ab suscipit dolorum maiores, labore officiis praesentium quos voluptatum mollitia id! Accusamus nesciunt excepturi illum nam unde officia, autem consequatur obcaecati earum ducimus, quam voluptatibus doloribus, quidem vitae error harum. Nostrum magni placeat unde molestiae? Totam, dolorem! Nemo corrupti hic odio tempore minus tenetur, et ad architecto accusantium? Fugit deserunt praesentium officiis esse, consequatur cum aspernatur explicabo veniam!
@@ -1109,13 +1110,16 @@
                         </div>
                     </li>
                 </ol>
-            </div>
             </main>
             <aside class="sidebar-right"></aside>
             <footer class="footer"></footer>
         </div>
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
         <script src="/js/flatpickr.min.js"></script>
         <script src="/js/interact.min.js"></script>
         <script src="/js/app.js"></script>
+        <script>
+            Array.prototype.forEach.call(document.querySelectorAll('.scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
+        </script>
     </body>
 </html> 

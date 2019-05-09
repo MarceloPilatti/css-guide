@@ -39,6 +39,9 @@
           color: var(--text-hover-color);
         }
       }
+      & > .btn + .collapse {
+        display: none;
+      }
       &.collapse.show {
         width: unset;
         text-align: left;

@@ -14,7 +14,7 @@
   border: 0;
   @each $name, $color in $colors-map {
     &.btn-#{$name} {
-      background-color: if($name=='light', $color,darken($color, 40%));
+      background-color: if($name=='light', $color, darken($color, 40%));
       border: if($name=='light',1px solid var(--border-color), unset);
       color: if($name=='light',#000, #fff);
       &:hover,
@@ -24,7 +24,6 @@
       }
     }
   }
-
   &.btn-block {
     display: block;
     width: 100%;

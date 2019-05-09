@@ -8,13 +8,12 @@
 .grid-container {
   display: grid;
   height: 100%;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: fit-content(75px) auto 75px 50px;
-  grid-template-areas:
-    'sidebar-left header'
-    'sidebar-left content'
-    'sidebar-left sidebar-right'
-    'sidebar-left footer';
+  grid-template: 
+    'sidebar-left header' fit-content(75px)
+    'sidebar-left content' auto
+    'sidebar-left sidebar-right' 75px
+    'sidebar-left footer' 50px
+    / auto 1fr;
     &.hide-sidebar {
       grid-template-columns: auto 1fr;
     }
@@ -35,12 +34,11 @@
       }
     }
     @include media-breakpoint('lg') {
-      grid-template-columns: 1fr 4fr;
-      grid-template-rows: 75px auto 50px;
-      grid-template-areas:
-        'sidebar-left header  header'
-        'sidebar-left content sidebar-right'
-        'sidebar-left footer  footer';
+      grid-template: 
+          'sidebar-left header  header' 75px
+          'sidebar-left content sidebar-right' auto
+          'sidebar-left footer  footer' 50px
+          / 1fr 4fr;
       .sidebar {
         width: 100%;
       }

@@ -31,27 +31,8 @@
     }
 }
 
-.list-style {
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin-bottom: .25rem;
-}
-
 @each $name, $color in $colors-map {
     .text-#{$name} {
         color: darken($color, 40%);
-    }
-}
-ol {
-    list-style: none;
-    counter-reset: counter;
-    & > li {
-        counter-increment: counter;
-        padding: 1rem;
-        &::before {
-            content: counter(counter) ". ";
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
     }
 }
