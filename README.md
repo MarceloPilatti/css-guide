@@ -2,7 +2,7 @@
 
 This is a guide to learn the basics of CSS and is separated by the following structure:
 
-1. **What's CSS?** [#](#1-whats-css?)
+1. **What's CSS?** [#](#1--whats-css?)
 2. **Syntax** [#](#2-syntax)
 3. **Selectors** [#](#3-selectors)
 4. **Shorthand Properties** [#](#4-Shorthand-Properties)
