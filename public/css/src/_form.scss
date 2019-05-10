@@ -199,16 +199,13 @@ textarea.form-field {
     opacity: 0;
     &:checked + .slider:before {
       transform: translateX(1rem);
-      background-color: #eee;
+      background-color: #fff;
       border: #ccc solid 1px;
     }
   }
   @each $name, $color in $colors-map {
     &.switch-#{$name} input:checked + .slider {
-      background-color: if($name=='light', $color, darken($color, 40%));
-    }
-    &.switch-#{$name} input:focus + .slider {
-      box-shadow: 0 0 1px darken($color, 40%);
+      background-color: if($name=='light', darken($color, 2%), darken($color, 40%));
     }
   }
   .slider {
@@ -231,7 +228,7 @@ textarea.form-field {
       bottom: 3px;
       border: #ccc solid 1px;
       border-radius: 50%;
-      background-color: #eee;
+      background-color: #fff;
       transition: .4s;
     }
   }

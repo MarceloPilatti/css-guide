@@ -5,7 +5,7 @@ const collapse = ($toggleBtn, close) => {
     } else {
         $collapsible.classList.toggle("show");
     }
-    let $icon = $toggleBtn.querySelector(".fas");
+    let $icon = $toggleBtn.querySelector(":scope > .fas");
     if($icon) {
         $icon.classList.toggle("fa-angle-down");
         $icon.classList.toggle("fa-angle-up");
@@ -106,7 +106,7 @@ const setEvents = () => {
         minDate: "today",
         dateFormat: "Y-m-d"
     });
-    Array.prototype.forEach.call(document.querySelectorAll('.scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
+    Array.prototype.forEach.call(document.querySelectorAll('.scrollbar, .scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
 }
 
 (()=>{

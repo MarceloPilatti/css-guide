@@ -17,7 +17,7 @@ This is a guide to learn the basics of CSS and is separated by the following str
 
 ## **1.  What's CSS?**
 
-CSS (Cascading style sheets) is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.
+CSS (Cascading style sheets) is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or content) from presentation.
 
 [Back to top](#css-guide)
  
@@ -41,7 +41,7 @@ selector {
 
 ### **2.1 Including css on the page** (*[details](https://www.w3schools.com/css/css_howto.asp)*)
 
-There are three main ways in which we may include CSS in our web pages:
+There are three main ways in which we can include CSS in our web pages:
 
 - **External Style Sheet** (*[example](https://www.w3schools.com/css/tryit.asp?filename=trycss_howto_external)*) - An external file linked to your HTML document;
 

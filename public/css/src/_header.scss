@@ -27,6 +27,35 @@
       padding-right: 10px
     }
   }
+  & .dropdown  {
+    position: static;
+    & > .collapse {
+      position: relative;
+      text-shadow: var(--text-shadow);
+      color: var(--text-main-color);
+      background-color: var(--hover-color);
+      border-radius: none;
+      box-shadow: none;
+      & a {
+        padding: 0;
+        @extend %item-link;
+      }
+      @include media-breakpoint('lg') {
+        border: none;
+        position: absolute;
+        background-color: var(--main-color);
+        border-radius: var(--border-radius);
+        @include box-shadow(.3);
+        & a {
+          padding: .75rem;
+          @extend %item-link;
+        }
+        &.collapse.show {
+          width: unset;
+        }
+      }
+    }
+  }
   &-navbar {
     display: flex;
     flex-direction: column;

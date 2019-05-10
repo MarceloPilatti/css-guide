@@ -93,7 +93,17 @@
       background-color: var(--active-color);
       border: 1px solid var(--main-color);
       text-align: left;
-      font-size: 90%;
+      font-size: 80%;
+      &.sidebar-item-header {
+        padding: 5px 15px 5px 20px;
+        color: #fff;
+        background-color: var(--main-color);
+        margin-bottom: 5px;
+        &:hover {
+          border-left: none;
+          background-color: none;
+        }
+      }
       &:hover {
         background-color: var(--hover-color);
         border-left: 2px solid var(--border-hover-color);

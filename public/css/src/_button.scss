@@ -1,5 +1,7 @@
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
   border-radius: var(--border-radius);
   padding: .375rem .75rem;
@@ -13,6 +15,12 @@
   background-color: transparent;
   @include box-shadow(.1);
   @each $name, $color in $colors-map {
+    .dropdown > &.btn-#{$name} + div > a:hover {
+      &:hover {
+        background-color: if($name=='light', darken($color, 5%), darken($color, 45%));
+        color: if($name=='light',#000, #fff);
+      }
+    }
     &.btn-#{$name} {
       background-color: if($name=='light', $color, darken($color, 40%));
       border: if($name=='light',1px solid var(--border-color), unset);
