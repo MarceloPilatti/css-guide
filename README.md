@@ -12,7 +12,7 @@ This is a guide to learn the basics of CSS and is separated by the following str
 8. **Units** [#](#8-units)
 9. **Some properties** [#](#9-some-properties)
 10. **Responsiveness** [#](#10-responsiveness)
-11. **Preprocessors** [#](#11-preprocessors)
+11. **Preprocessors** [#](#11-preprocessors-and-postprocessors)
 12. **Usefull links** [#](#12-usefull-links)
 
 ## **1.  What's CSS?**
