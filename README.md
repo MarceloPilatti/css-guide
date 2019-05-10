@@ -242,13 +242,13 @@ List of some inherited properties:
 
 CSS functions are used as a value for various CSS properties.
 
-[Back to top](#css-guide)
-
 - **calc()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_calc)*) - The calc() function performs a calculation to be used as the property value;
 
 - **rgb()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_rgb)*) - The rgb() function define colors using the Red-green-blue (RGB) model;
 
 - **var()** (*[example](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_func_var)*) - The var() function is used to insert the value of a custom property instead of any part of a value of another property.
+
+[Back to top](#css-guide)
 
 ## **8. Units** 
 *[Reference](https://www.w3schools.com/css/css_units.asp)*
