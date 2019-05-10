@@ -6,19 +6,20 @@
   user-select: none;
   text-decoration: none;
   line-height: 1.5;
+  border: 0;
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
   background-color: transparent;
   @include box-shadow(.1);
-  border: 0;
   @each $name, $color in $colors-map {
     &.btn-#{$name} {
       background-color: if($name=='light', $color, darken($color, 40%));
       border: if($name=='light',1px solid var(--border-color), unset);
       color: if($name=='light',#000, #fff);
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         text-shadow: if($name=='light',unset, var(--text-shadow));
         background-color: if($name=='light', darken($color, 5%), darken($color, 45%));
       }

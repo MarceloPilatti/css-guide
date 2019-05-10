@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="/css/flatpickr.min.css">
         <link rel="stylesheet" href="/css/all.min.css">
         <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
+        <link rel="stylesheet" href="/css/simplebar.min.css" />
     </head>
     <body>
         <div class="grid-container">
@@ -14,7 +14,7 @@
                 </div>
                 <a class="header-brand hide" href="/">
                     <img src="/img/terrama2_logo.png" /> 
-                    TerraMA²
+                    TerraMA²&nbsp;&nbsp;5
                 </a>
                 <div class="collapse" data-collapse="#header-toggle">
                     <ul class="header-navbar">
@@ -56,7 +56,7 @@
                 <!-- <a class="sidebar-toggle fas fa-bars" data-activate="sidebar-toggle"></a> -->
                 <div class="sidebar-header">
                     <a class="sidebar-header-logo" href="/"><img src="/img/terrama2_logo.png"></a>
-                    <a class="sidebar-header-title" href="/">TerraMA²</a>
+                    <a class="sidebar-header-title" href="/">TerraMA²&nbsp;&nbsp;5</a>
                 </div>
                 <hr>
                 <div class="sidebar-body scrollbar">
@@ -66,145 +66,370 @@
                             <a class="fas fa-angle-down"></a>
                         </li>
                         <ul class="collapse" data-collapse="#projects">
-                            <li class="sidebar-item"><a href="#">Project 1</a></li>
-                            <li class="sidebar-item"><a href="#">Project 2</a></li>
-                            <li class="sidebar-item"><a href="#">Project 3</a></li>
-                            <li class="sidebar-item"><a href="#">Project 4</a></li>
+                            <li class="sidebar-item">
+                                <span class="sidebar-text-container">
+                                    <span>Project 1</span>
+                                </span>
+                            </li>
+                            <li class="sidebar-item">
+                                <span class="sidebar-text-container">
+                                    <span>Project 2</span>
+                                </span>
+                            </li>
+                            <li class="sidebar-item">
+                                <span class="sidebar-text-container">
+                                    <span>Project 3</span>
+                                </span>
+                            </li>
+                            <li class="sidebar-item">
+                                <span class="sidebar-text-container">
+                                    <span>Project 4</span>
+                                </span>
+                            </li>
                         </ul>
-                        <li id="views" class="sidebar-item" data-activate="collapse">
-                            <a href="#">Views</a>
+                        <li id="alerts" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="fas fa-exclamation-triangle"></span>
+                                <span>Alerts</span>
+                            </span>
                             <a class="fas fa-angle-down"></a>
                         </li>
-                        <ul class="collapse" data-collapse="#views">
+                        <ul class="collapse" data-collapse="#alerts">
                             <li class="sidebar-item">
-                                <a href="#">
-                                    View 1
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <span class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <span>Alert 1</span>
+                                </span>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    View 2
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <span class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <span>Alert 2</span>
+                                </span>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    View 3
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <span class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <span>Alert 3</span>
+                                </span>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    View 4
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#">
-                                    View 5
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <span class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <span>Alert 4</span>
+                                </span>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                         </ul>
-                        <li id="staticData" class="sidebar-item" data-activate="collapse"><a href="#">Static Data</a><a class="fas fa-angle-down"></a></li>
-                        <ul class="collapse" data-collapse="#staticData">
+                        <li id="analysis" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="circle circle-yellow blink"></span>
+                                <span class="fas fa-search"></span>
+                                <span>Analysis</span>
+                            </span>
+                            <a class="fas fa-angle-down"></a>
+                        </li>
+                        <ul class="collapse" data-collapse="#analysis">
                             <li class="sidebar-item">
-                                <a href="#">
-                                    <div class="circle circle-red blink"></div>
-                                    Data 1
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-yellow blink"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Analysis 1</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    <div class="circle circle-green blink"></div>
-                                    Data 2
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-yellow blink"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Analysis 2</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    <div class="circle circle-yellow blink"></div>
-                                    Data 3
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-gray"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Analysis 3</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    <div class="circle circle-gray"></div>
-                                    Data 4
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#">
-                                    Data 5
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-gray"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Analysis 4</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                         </ul>
-                        <li id="dynamicData" class="sidebar-item" data-activate="collapse"><a href="#">Dynamic Data</a><a class="fas fa-angle-down"></a></li>
+                        <li id="dynamicData" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="circle circle-green"></span>
+                                <span class="fas fa-clock"></span>
+                                <span>Dynamic data</span>
+                            </span>
+                            <a class="fas fa-angle-down"></a>
+                        </li>
                         <ul class="collapse" data-collapse="#dynamicData">
                             <li class="sidebar-item">
-                                <a href="#">
-                                    Data 1
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 1</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    Data 2
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 2</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    Data 3
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 3</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    Data 4
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 4</span>
+                                    </label>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <a class="fas fa-cog" href="#"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <li id="staticData" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="circle circle-green"></span>
+                                <span class="fas fa-folder"></span>
+                                <span>Static Data</span>
+                            </span>
+                            <a class="fas fa-angle-down"></a>
+                        </li>
+                        <ul class="collapse" data-collapse="#staticData">
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 1</span>
+                                    </label>
+                                </div>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#">
-                                    Data 5
-                                    <div class="sidebar-icon-container">
-                                        <a class="fas fa-cog" href="#"></a>
-                                    </div>
-                                </a>
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 2</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 3</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle circle-green"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Data 4</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <li id="templates" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="circle"></span>
+                                <span class="fas fa-map"></span>
+                                <span>Templates</span>
+                            </span>
+                            <a class="fas fa-angle-down"></a>
+                        </li>
+                        <ul class="collapse" data-collapse="#templates">
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Template 1</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Template 2</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Template 3</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Template 4</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <li id="externals" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span class="circle"></span>
+                                <span class="fas fa-link"></span>
+                                <span>Externals</span>
+                            </span>
+                            <div class="sidebar-icon-container">
+                                <span class="fas fa-plus"></span>
+                                <a class="fas fa-angle-down"></a>
+                            </div>
+                        </li>
+                        <ul class="collapse" data-collapse="#externals">
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Externals 1</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Externals 2</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Externals 3</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span class="circle"></span>
+                                    <label class="checkbox" for="checkbox">
+                                        <input id="checkbox" name="checkbox" type="checkbox" value="checkbox" checked />
+                                        <span>Externals 4</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <li id="layers" class="sidebar-item" data-activate="collapse">
+                            <span class="sidebar-text-container">
+                                <span>Visible layers</span>
+                            </span>
+                            <div class="sidebar-icon-container">
+                                <label class="switch switch-light">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <span class="fas fa-window-close"></span>
+                                <span class="fas fa-expand-arrows-alt"></span>
+                                <a class="fas fa-angle-down"></a>
+                            </div>
+                        </li>
+                        <ul class="collapse" data-collapse="#layers">
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span>Layer 1</span>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <span class="fas fa-expand-arrows-alt"></span>
+                                    <span class="fas fa-cog" href="#"></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                        <span>Layer 2</span>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <span class="fas fa-expand-arrows-alt"></span>
+                                    <span class="fas fa-cog" href="#"></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-item">
+                                <div class="sidebar-text-container">
+                                    <span>Layer 3</span>
+                                </div>
+                                <div class="sidebar-icon-container">
+                                    <span class="fas fa-expand-arrows-alt"></span>
+                                    <span class="fas fa-cog" href="#"></span>
+                                </div>
                             </li>
                         </ul>
                     </ul>
@@ -342,31 +567,31 @@
                                 <label>Switch</label>
                                 <div class="flex flex-row flex-center flex-wrap justify-around">
                                     <label class="switch switch-main">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-success">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-danger">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-warning">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-info">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-secondary">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                     <label class="switch switch-light">
-                                        <input type="checkbox">
+                                        <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                 </div>
@@ -396,7 +621,6 @@
                                 </div>
                             </li>
                         </ol>
-
                     </li>
 
                     <li><label>Buttons</label>
@@ -415,7 +639,7 @@
                     <li><label>Dropdown</label>
                         <div class="flex flex-column flex-lg-row justify-around flex-wrap">
                             <div class="dropdown">
-                                <a id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-main-dropdown" class="btn btn-main" data-activate="collapse">Dropdown main&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-main-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -423,7 +647,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-success-dropdown" class="btn btn-success" data-activate="collapse">Dropdown success&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-success-dropdown" class="btn btn-success" data-activate="collapse">Dropdown success&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-success-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -431,7 +655,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-warning-dropdown" class="btn btn-warning" data-activate="collapse">Dropdown warning&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-warning-dropdown" class="btn btn-warning" data-activate="collapse">Dropdown warning&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-warning-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -439,7 +663,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-danger-dropdown" class="btn btn-danger" data-activate="collapse">Dropdown danger&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-danger-dropdown" class="btn btn-danger" data-activate="collapse">Dropdown danger&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-danger-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -447,7 +671,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-info-dropdown" class="btn btn-info" data-activate="collapse">Dropdown info&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-info-dropdown" class="btn btn-info" data-activate="collapse">Dropdown info&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-info-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -455,7 +679,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-secondary-dropdown" class="btn btn-secondary" data-activate="collapse">Dropdown secondary&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-secondary-dropdown" class="btn btn-secondary" data-activate="collapse">Dropdown secondary&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-secondary-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -463,7 +687,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a id="btn-light-dropdown" class="btn btn-light" data-activate="collapse">Dropdown light&nbsp;<span class="fas fa-angle-down"></span></a>
+                                <button id="btn-light-dropdown" class="btn btn-light" data-activate="collapse">Dropdown light&nbsp;<span class="fas fa-angle-down"></span></button>
                                 <div class="collapse" data-collapse="#btn-light-dropdown">
                                     <a class="dropdown-item" href="#">Item 1</a>
                                     <a class="dropdown-item" href="#">Item 2</a>
@@ -500,6 +724,7 @@
                     </li>
 
                     <li><label>Loading</label>
+                        <br>
                         <span class="loading-spin"></span>
                         <br>
                         <div class="loading-grow"></div>
@@ -1114,12 +1339,9 @@
             <aside class="sidebar-right"></aside>
             <footer class="footer"></footer>
         </div>
-        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+        <script src="/js/simplebar.min.js"></script>
         <script src="/js/flatpickr.min.js"></script>
         <script src="/js/interact.min.js"></script>
         <script src="/js/app.js"></script>
-        <script>
-            Array.prototype.forEach.call(document.querySelectorAll('.scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
-        </script>
     </body>
 </html> 

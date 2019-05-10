@@ -1,0 +1,16 @@
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 250ms linear;
+    &.show {
+      width: 100%;
+      max-height: 250px;
+    }
+  }
+  [data-activate="collapse"]:hover,
+  [data-activate="collapse"] a:hover {
+    cursor: pointer;
+  }

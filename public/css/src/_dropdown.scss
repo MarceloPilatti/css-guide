@@ -12,6 +12,7 @@
     text-shadow: var(--text-shadow);
     color: var(--text-main-color);
     background-color: var(--main-color);
+    min-width: 100px;
     & a {
       display: block;
       padding: .75rem;
@@ -44,7 +45,7 @@
       }
       &.collapse.show {
         width: unset;
-        text-align: left;
+        text-align: center;
         @include box-shadow(.3);
       }
     }

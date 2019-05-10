@@ -1,8 +1,8 @@
 const collapse = ($toggleBtn, close) => {
     let $collapsible = document.querySelector(`[data-collapse='#${$toggleBtn.id}']`);
-    if(close){
+    if(close) {
         $collapsible.classList.remove("show");
-    }else{
+    } else {
         $collapsible.classList.toggle("show");
     }
     let $icon = $toggleBtn.querySelector(".fas");
@@ -105,7 +105,8 @@ const setEvents = () => {
         mode: "range",
         minDate: "today",
         dateFormat: "Y-m-d"
-    })
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
 }
 
 (()=>{

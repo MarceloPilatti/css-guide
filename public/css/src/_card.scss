@@ -46,7 +46,7 @@
     padding: 1.25rem;
     &.collapse {
       padding: 0;
-      transition: max-height 100ms linear;
+      transition: max-height 200ms linear;
       &.show {
         padding: 1.25rem;
         max-height: 500px;
