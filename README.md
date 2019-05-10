@@ -2,18 +2,19 @@
 
 This is a guide to learn the basics of CSS and is separated by the following structure:
 
-1. **What's CSS?** [#](#1.-what's-css?)
-2. **Syntax** [#](#2.-syntax)
-3. **Selectors** [#](#3.-selectors)
-4. **Shorthand Properties** [#](#4.-Shorthand-Properties)
-5. **Specificity** [#](#5.-Specificity)
-6. **Inheritance** [#](#6.-Inheritance)
-7. **Functions** [#](#7.-Functions)
-8. **Units** [#](#8.-Units)
-9. **Some properties** [#](#9.-Some-properties)
-10. **Responsiveness** [#](#10.-Responsiveness)
-11. **Preprocessors** [#](#11.-Preprocessors)
-12. **Usefull links** [#](#12.-Usefull-links)
+1. **What's CSS?** [#](#1-what's-css?)
+#1--whats-css
+2. **Syntax** [#](#2-syntax)
+3. **Selectors** [#](#3-selectors)
+4. **Shorthand Properties** [#](#4-Shorthand-Properties)
+5. **Specificity** [#](#5-Specificity)
+6. **Inheritance** [#](#6-Inheritance)
+7. **Functions** [#](#7-Functions)
+8. **Units** [#](#8-Units)
+9. **Some properties** [#](#9-Some-properties)
+10. **Responsiveness** [#](#10-Responsiveness)
+11. **Preprocessors** [#](#11-Preprocessors)
+12. **Usefull links** [#](#12-Usefull-links)
 
 ## **1.  What's CSS?**
 
