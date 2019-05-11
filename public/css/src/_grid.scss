@@ -7,7 +7,6 @@
 
 .grid-container {
   display: grid;
-  height: 100%;
   grid-template: 
     'sidebar-left header' fit-content(75px)
     'sidebar-left content' auto

@@ -218,7 +218,7 @@ button:not(:disabled) {
 	cursor: pointer
 }
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
 	width: 10px;
 	&-track {
 		background: var(--main-color);
@@ -231,7 +231,7 @@ body::-webkit-scrollbar {
 		background: rgba(0, 0, 0, 0.8);
 	}
 }
-body {
-	scrollbar-color: var(--main-color) rgba(0, 0, 0, 0.8);
-  	scrollbar-width: 5px;
+html {
+	scrollbar-color: rgba(0, 0, 0, 0.5) var(--main-color);
+	scrollbar-width: 5px;
 }

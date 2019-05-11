@@ -1,10 +1,14 @@
 .sidebar {
   grid-area: sidebar-left;
-  position: relative;
+  position: sticky;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  max-height: 100vh;
+  height: 100vh;
+  z-index: 1000;
   width: 0;
+  top: 0;
   background-color: var(--main-color);
   @include box-shadow(.75);
   transition: width 100ms linear;
@@ -52,6 +56,25 @@
     flex: 1;
     & .collapse.show {
       max-height: 500px;
+    }
+    &::-webkit-scrollbar,
+    & .collapse::-webkit-scrollbar {
+      width: 5px;
+      &-track {
+        background: var(--main-color);
+      }
+      &-thumb {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+      }
+      &-thumb:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+    &,
+    & .collapse {
+      scrollbar-color: rgba(0, 0, 0, 0.5) var(--main-color);
+  	  scrollbar-width: thin;
     }
   }
   &-item {

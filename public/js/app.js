@@ -106,7 +106,7 @@ const setEvents = () => {
         minDate: "today",
         dateFormat: "Y-m-d"
     });
-    Array.prototype.forEach.call(document.querySelectorAll('.scrollbar, .scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
+    Array.prototype.forEach.call(document.querySelectorAll('.scrollbar .collapse'), el => new SimpleBar(el,{scrollbarMinSize: 5}));
 }
 
 (()=>{

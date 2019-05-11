@@ -63,7 +63,8 @@ a {
 
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -127,7 +128,9 @@ select {
 [type=reset],
 [type=submit],
 button {
-  appearance: button;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 [type=button]::-moz-focus-inner,
@@ -178,7 +181,9 @@ textarea {
 }
 
 [type=search] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -219,22 +224,22 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 10px;
 }
-body::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
   background: var(--main-color);
 }
-body::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }
-body::-webkit-scrollbar-thumb:hover {
+html::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
-body {
-  scrollbar-color: var(--main-color) rgba(0, 0, 0, 0.8);
+html {
+  scrollbar-color: rgba(0, 0, 0, 0.5) var(--main-color);
   scrollbar-width: 5px;
 }
 
@@ -294,7 +299,6 @@ body {
 
 .grid-container {
   display: grid;
-  height: 100%;
   grid-template: "sidebar-left header" fit-content(75px) "sidebar-left content" auto "sidebar-left sidebar-right" 75px "sidebar-left footer" 50px/auto 1fr;
 }
 .grid-container.hide-sidebar {
@@ -960,6 +964,10 @@ body {
   grid-area: header;
   display: flex;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: var(--main-color);
 }
 .header-brand {
@@ -1067,11 +1075,16 @@ body {
 
 .sidebar {
   grid-area: sidebar-left;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  max-height: 100vh;
+  height: 100vh;
+  z-index: 1000;
   width: 0;
+  top: 0;
   background-color: var(--main-color);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.75);
   transition: width 100ms linear;
@@ -1114,6 +1127,23 @@ body {
 }
 .sidebar-body .collapse.show {
   max-height: 500px;
+}
+.sidebar-body::-webkit-scrollbar, .sidebar-body .collapse::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar-body::-webkit-scrollbar-track, .sidebar-body .collapse::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+.sidebar-body::-webkit-scrollbar-thumb, .sidebar-body .collapse::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.sidebar-body::-webkit-scrollbar-thumb:hover, .sidebar-body .collapse::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.sidebar-body, .sidebar-body .collapse {
+  scrollbar-color: rgba(0, 0, 0, 0.5) var(--main-color);
+  scrollbar-width: thin;
 }
 .sidebar-item {
   display: flex;
@@ -1640,7 +1670,8 @@ textarea.form-field {
   opacity: 0;
 }
 .switch input:checked + .slider:before {
-  transform: translateX(1rem);
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
   background-color: #fff;
   border: #ccc solid 1px;
 }
@@ -1698,7 +1729,9 @@ textarea.form-field {
 .checkbox input,
 .radio input {
   position: relative;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: inherit;
   font-weight: bold;
   width: 1em;
@@ -1722,7 +1755,8 @@ textarea.form-field {
 }
 .checkbox input:active,
 .radio input:active {
-  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 .checkbox input + span,
 .radio input + span {
@@ -1754,7 +1788,9 @@ textarea.form-field {
 }
 
 .slider input {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   display: block;
   padding: 0;
@@ -1767,7 +1803,8 @@ textarea.form-field {
   background-color: #ccc;
 }
 .slider input::-moz-range-track {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   background: var(--main-color);
   outline: none;
 }
@@ -1775,7 +1812,8 @@ textarea.form-field {
   border: 0;
 }
 .slider input::-moz-range-thumb {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   width: 1rem;
   height: 1rem;
   border: none;
@@ -1786,23 +1824,28 @@ textarea.form-field {
   transition: 0.3s ease-out;
 }
 .slider input::-moz-range-thumb:focus, .slider input::-moz-range-thumb:active {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   transform: scale(1.3);
 }
 .slider input::-webkit-slider-thumb {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   width: 0.8rem;
   height: 0.8rem;
   border: none;
   box-shadow: 0 0 0 0.2rem var(--main-color);
   border-radius: 1rem;
   background: var(--main-color);
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   transition: 0.3s ease-out;
 }
 .slider input::-webkit-slider-thumb:focus, .slider input::-webkit-slider-thumb:active {
-  appearance: none;
-  transform: scale(0.9);
+  -webkit-appearance: none;
+          appearance: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .btn {
@@ -1812,7 +1855,10 @@ textarea.form-field {
   vertical-align: middle;
   border-radius: var(--border-radius);
   padding: 0.375rem 0.75rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-decoration: none;
   line-height: 1.5;
   border: 0;
@@ -2021,7 +2067,9 @@ textarea.form-field {
 }
 
 .progress {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   border-radius: 290486px;
   display: block;
@@ -2058,7 +2106,8 @@ textarea.form-field {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 150% 150%;
-  animation: moveIndeterminate 1.5s linear infinite;
+  -webkit-animation: moveIndeterminate 1.5s linear infinite;
+          animation: moveIndeterminate 1.5s linear infinite;
 }
 .progress:indeterminate::-webkit-progress-bar {
   background-color: transparent;
@@ -2149,6 +2198,15 @@ textarea.form-field {
 }
 .progress.progress-light:indeterminate {
   background-image: linear-gradient(to right, #999999 30%, #dbdbdb 30%);
+}
+
+@-webkit-keyframes moveIndeterminate {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
 }
 
 @keyframes moveIndeterminate {
@@ -2261,7 +2319,8 @@ textarea.form-field {
   left: 0;
   background-color: var(--main-color);
   visibility: hidden;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   transition: all 0.2s cubic-bezier(1, 0.25, 0, 0.75);
 }
 .link:hover {
@@ -2269,7 +2328,8 @@ textarea.form-field {
 }
 .link:hover:before {
   visibility: visible;
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .text-main {
@@ -2328,12 +2388,21 @@ textarea.form-field {
   border-radius: 50%;
   border: 0.25em solid #000;
   border-right-color: transparent;
-  animation: spin 0.75s linear infinite;
+  -webkit-animation: spin 0.75s linear infinite;
+          animation: spin 0.75s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .loading-grow {
@@ -2344,12 +2413,24 @@ textarea.form-field {
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
-  animation: grow 0.75s linear infinite;
+  -webkit-animation: grow 0.75s linear infinite;
+          animation: grow 0.75s linear infinite;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   50% {
     opacity: 1;
@@ -2384,12 +2465,24 @@ textarea.form-field {
 
 .blink {
   opacity: 0;
-  animation: blink 1s linear infinite;
+  -webkit-animation: blink 1s linear infinite;
+          animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes blink {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     opacity: 1;
